@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="CS1951A" />
+    <meta name="description" content="Website for Brown CS1951A" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        document.getElementById("assignments-nav").className += " active";
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+    <title>CS1951A | Assignments</title>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="other-content-container">
+        <!-- Header-->
+        <div class="container-fluid" id="header">
+          <!-- Navbar-->
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-controls="#navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">cs1951a</a>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-nav" href="../index.html"
+                  >home</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="resources-nav"
+                  href="../resources/index.html"
+                  >resources</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="slides-nav"
+                  href="../slides/index.html"
+                  >lectures</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="assignments-nav"
+                  href="../assignments/index.html"
+                  >assignments</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="staff-nav"
+                  href="../staff/index.html"
+                  >staff</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="hours-nav"
+                  href="../hours/index.html"
+                  >hours</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="blogs-nav"
+                  href="../archive/index.html"
+                  >archive</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="container" id="copy">
+          <div class="row" id="homeworks-row">
+            <div class="col-md-12">
+              <div id="homeworks">
+                <h1>homeworks</h1>
+                <table class="table table-hover" id="assignments-table">
+                  <thead>
+                    <tr>
+                      <th>Assignment</th>
+                      <th>Out</th>
+                      <th>Due</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="homework-0-tr">
+                      <td class="out">
+                        <a href="./getting-started/getting-started.html" target="_blank"
+                          >Getting Started</a
+                        >
+                      </td>
+                      <!-- <td>SQL Syntax & Querying</td> -->
+                      <td>May 14</td>
+                      <td>May 25</td>
+                    </tr>
+                    <tr id="homework-1-tr">
+                      <td class='out'>
+                        <a href="./sql/sql.html" target="_blank"
+                          >SQL</a
+                        >
+                      </td>
+                      <td>May 25</td>
+                      <td>June 1</td>
+                    </tr>
+                    <tr id="homework-2-tr">
+                      <td class="out">
+                        <a href="./scraping/hw2.html" target="_blank"
+                          >Web Crawling</a
+                        >
+                      </td>
+                      <!--  <td>Web Scraping & Data Cleaning</td> -->
+                      <td>June 1</td>
+                      <td>June 8</td>
+                    </tr>
+                    <tr id="homework-3-tr">
+                      <td class="out">
+                        <a href="./mapreduce/mapreduce.html" target="_blank">MapReduce</a>
+                      </td>
+                      <td>June 8</td>
+                      <td>June 17</td>
+                    </tr>
+                    <tr id="homework-4-tr">
+                      <td class="out">
+                        <a href="./stats/stats-summer2021.html" target="_blank">Stats</a>
+                      </td>
+                      <!--<td>Stats</td> -->
+                      <td>June 17</td>
+                      <td>June 24</td>
+                    </tr>
+                    <tr id="homework-5-tr">
+                      <td class="out">
+                        <a href="./ml/ml.html" target="_blank">
+                          Machine Learning
+                        </a>
+                      </td>
+                      <td>July 6</td>
+                      <td>July 13</td>
+                    </tr>
+                    <tr id="homework-6-tr">
+                      <td class="out">
+                        <a href="./dataviz-new/data-visualization.html" target="_blank">
+                          Data Visualization
+                        </a>
+                      </td>
+                      <td>July 23</td>
+                      <td>July 30</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <br><hr><br>
+          <!-- ------------------------------------------------------------------------------ -->
+          <div class="row" id="labs-row">
+            <div class="col-md-12">
+              <h1>labs</h1>
+              <p>
+                Labs are designed to help with assignments and the deliverables
+                for the final project.
+              </p>
+
+              <p>
+                Every student will be assigned a lab slot during shopping
+                period. Details for lab checkoff and attendance can be found in
+                the syllabus.
+              </p>
+              <p>
+                All labs will happen on Gather.town
+                <a
+                  class="red"
+                  href="https://www.google.com/url?q=https%3A%2F%2Fgather.town%2Fapp%2FIeSSTcA5QuYtSf4G%2FData%2520Science%2520Lab%25F0%259F%2590%25BC&sa=D&ust=1612235309771000&usg=AOvVaw0Livk0HJe7M7Y_tpzFl0JO"
+                  target="_blank"
+                  >here</a
+                >, password being "pandas". Please use
+                <a
+                  class="red"
+                  href="https://signmeup.cs.brown.edu/"
+                  target="_blank"
+                  >Signmeup</a
+                >
+                to ask questions and get checked off for labs. Please refer to
+                our
+                <a
+                  class="red"
+                  href="https://docs.google.com/document/d/1fy2q5LKX69DUR_Ly4rWHnza3wAEXJ91zlmvj6L-1Qtc"
+                  target="_blank"
+                  >Lab Guide</a
+                >
+                if you want more information on how to open Google Colab.
+              </p>
+
+              <table class="table table-hover" id="labs-table">
+                <thead>
+                  <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>May 20 – May 26</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/drive/folders/1urvH7Pkvo1ysDv4Nbhb3hbWywsQpNK4q?usp=sharing"
+                        target="_blank"
+                        >Intro to SQL</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>May 27 – June 2</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/drive/folders/1SM7Ts3wZSSPSH-maMCsGakkFb4xA_TD7?usp=sharing"
+                        target="_blank"
+                        >Pandas/Numpy Lab</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>June 3 – June 9</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1U3IY_OUC5c_bXH9wSSL1sFkIdyEfdH_5?usp=sharing"
+                      target="_bllank">Intro to MapReduce</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>June 15 – June 21</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1W-Rrp3EVx9FgALJNPaIzN9StvM05vAFK?usp=sharing"
+                      target="_blank"
+                      >Stats</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>July 2 – July 15</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1ZrpYpNeHK4aMmzC0zo4hJ_taOVAJxuF2?usp=sharing" target="_blank">Supervised Machine Learning</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>July 16 – July 26</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1pFLq6UV6t6bzscGaYgnlzcMJvzOc7nLD?usp=sharing" target="_blank">Python Data Visualization</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>N/A</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1gD7FpcxdZ9Of6Vt_MlaFBzAY73rX-Y0M?usp=sharing" target="_blank">NLP & Matrix Factorization (Optional)</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>N/A</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1Yo9MnlQmNae-TBEe2wYx7RhtZAZ3RI9K?usp=sharing" target="_blank">D3.js Data Visualization (Optional)</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>N/A</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/10m79HfyqbziPLPQsrUZe9_i7IzQVlMR-?usp=sharing" target="_blank">ML Fairness (Optional)</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <br><hr><br>
+          <!-- ------------------------------------------------------------------------------ -->
+          <div class="row" id="final-project-row">
+            <div class="col-md-12">
+              <h1>final project</h1>
+              <p>
+                Project groups will work closely with a TA Advisor throughout the
+                semester. The dates for checkins are approximate, and may vary
+                depending on your group's schedule and that of your advisor.
+              </p>
+
+
+              <table class="table table-hover" id="projects-table">
+                <thead>
+                  <tr>
+                    <th>Project Checkpoint</th>
+                    <th>Out</th>
+                    <th>Due</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="checkpoint-0">
+                    <td class="out">
+                      <a href="./final-project/data-deliverable.html" target="_blank"
+                        >Data Deliverable</a
+                      >
+                    </td>
+                    <td>June 25</td>
+                    <td>July 13</td>
+                  </tr>
+                  <tr id="checkpoint-1">
+                    <td class="out">
+                      <a href="./final-project/exploratory-deliverable.html" target="_blank">
+                        Exploratory Analysis Deliverable
+                        </a>
+                    </td>
+                    <td>July 13</td>
+                    <td>July 27</td>
+                  </tr>
+                  <tr id="checkpoint-2">
+                    <td class="out">
+                      <a href="./final-project/confirmatory-deliverable.html" target="_blank">
+                        Confirmatory Analysis Deliverable & Presentation
+                        </a>
+                    </td>
+                    <td>July 27</td>
+                    <td>August 10</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                Please check out highlighted example projects from the handout.
+                For more example project ideas, please check out our archive!
+                <!-- Likewise, we will be posting a number of data sources and project ideas. -->
+                Additionally, you can take a look at
+                <a
+                  class="red"
+                  target="_blank"
+                  href="https://github.com/caesar0301/awesome-public-datasets"
+                  >Awesome Public Datasets</a
+                >.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="container-fluid" id="footer">
+        <div class="container">
+          <p>
+            &copy; 2021 CS1951A Staff | Computer Science Department | Brown
+            University
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="CS1951A" />
+    <meta name="description" content="Website for Brown CS1951A" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        document.getElementById("slides-nav").className += " active";
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+    <title>CS1951A | Slides</title>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="other-content-container">
+        <!-- Header-->
+        <div class="container-fluid" id="header">
+          <!-- Navbar-->
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-controls="#navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">cs1951a</a>
+            <div class="collapse navbar-collapse" id="navbar">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-nav" href="../index.html"
+                  >home</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="resources-nav"
+                  href="../resources/index.html"
+                  >resources</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="slides-nav"
+                  href="../slides/index.html"
+                  >lectures</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="assignments-nav"
+                  href="../assignments/index.html"
+                  >assignments</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="staff-nav"
+                  href="../staff/index.html"
+                  >staff</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="hours-nav"
+                  href="../hours/index.html"
+                  >hours</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="blogs-nav"
+                  href="../archive/index.html"
+                  >archive</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="container" id="copy">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>lecture slides</h1>
+              <p>
+                Below are the links to all slides covered in class. Slides will
+                be posted as soon as they are available.
+              </p>
+
+              <!-- The following is a template for creating a new lecture -->
+              <!-- <tr>
+              <td>Lecture Number</td>
+              <td>Date</td>
+              <td><a href = "" target="_blank">Lecture Name</a></td>
+              <td><a href = "" target="_blank">Click Here</a></td>
+        </tr> -->
+
+              <table class="table table-hover" id="slides-table">
+                <thead>
+                  <tr>
+                    <th>Lecture #</th>
+                    <th>Date</th>
+                    <th>Topic</th>
+                    <th>Recording</th>
+                    <th>Quiz</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>13 May</td>
+                    <!-- <td  > -->
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1fWjGY1Nel3J85piu2cI84gwX1Uy612P7/view?usp=sharing"
+                        target="_blank"
+                        >Overview</a
+                      >
+                      <p></p>
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/gY92Oq6No5gEKr7F9EYwqelsrgenxKc1ZpMBGKkraHY-zU4QuS9jE9AQOvpylay6.MObOgozXXPHyVsvm"
+                        target="_blank"
+                        >Zoom</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfwI9uJXA8AyfK7lKZ6Z5sVRFPGIRRdunqPdjeLW4FAZKmyQQ/viewform?usp=sf_link"
+                      target="_blank">
+                      Quiz 1
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>18 May</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1jIP8Vj_qpCT8xQ50Y2hfVhUC2PWOKnqq/view?usp=sharing"
+                        target="_blank"
+                        >ER and SQL</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/snijeSLmcDUiCqKIQwMtYd0OklaGgWFm7TieQcgET-G5Zg0q0kQnwzk9VMF_9OUr.o_r35cG78W2BSmcn"
+                        target="_blank"
+                        >Zoom</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/yaYFk9aFisut88vF7" target="_blank">
+                      Quiz 2</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>20 May</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1NegV2b_tlSh9DYE27OL_eVQ1C0AehBCq/view?usp=sharing"
+                        target="_blank">
+                        More SQL
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/IDs_IeiuE4tOUVR7B97GvKtXnw-s9eDtt62hmJ_Rn1ZiiPsBs5zKzU80jf7KfMgK.32c0FE-hkLU-kvqg"
+                        target="_blank"
+                        >Zoom</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/yHy3vpML4VUBZF2v6" target="_blank">
+                        Quiz 3
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>25 May</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1kU21ycpOgciZ9_JcTI2ay9GDrCDGH4jt/view?usp=sharing"
+                        target="_blank"
+                        >Web Crawling</a
+                      > (<a href="https://drive.google.com/file/d/1gFR3kLMgsRq1w5F-lq2DZTzEe_Tl8rMR/view?usp=sharing" target="_blank">notebook</a>)
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/S-XQYKlE5r-6CcrnxtaoxSuS3uOxpThM0sVlgyKxLnaubx1YN1oHql-ZDbRt0AsP.iArfqDH2APGnEOdM"
+                        target="_blank"
+                        >Zoom</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/nCVmw8t2CorA2GKd8" target="_blank">
+                        Quiz 4
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>27 May</td>
+                    <td class="out">NO CLASS (<a href="https://piazza.com/class/knydwpe6sss2o1?cid=40" target="_blank">Final project Meet & Greet</a>)</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>1 June</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1syoP5KpK3q1k1k1NfkE4EMJPslzYVEMH/view?usp=sharing"
+                        target="_blank"
+                        >Data Cleaning</a
+                      > (<a href="https://drive.google.com/file/d/1Gjv3_gVPZr38mIgW5mi0nXCGsdTOdZT3/view?usp=sharing" target="_blank">bash commands</a>)
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/GkRbhFv21eQi3eZcFt63PBr6agKO85yVQXYVjmHIU7bAPzmDK8MAziCBtbKkw4f4.d9Q307Awz67W9rkp"
+                        >Zoom</a
+                      >
+                      <td class="out">
+                        <a href="https://forms.gle/4HWsgb1vFJQ5zRGK8" target="_blank">
+                          Quiz 5
+                        </a>
+                      </td>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>3 June</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1VwY0BZVAtWHLRKNR6siDvImk_0oxBGSw/view?usp=sharing"
+                        target="_blank"
+                        >MapReduce</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/bE4e833gB_kIDP-3p9nVi1p0ce1O2pKqzVMyXboZRxgw8kOErpjnU7qqdN8jWgHa.dKdnrLdsvQKDb1aB"
+                        target="_blank"
+                        >Zoom</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/haihWfkqxUkaeJEdA" target="_blank">
+                        Quiz 6
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>8 June</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1rGC7ZC7g0X2OdDZi0BZZQ7ajuCXnAqlh/view?usp=sharing"
+                         target="_blank"
+                        >Hypothesis Testing 1</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/62tgi8HUFN_kS_3-_o_pmgs-wGCEdeQXduY9UiA2HInzLgs_JR07X802RlnXFhJc.LG4Sz7U1xRIyqe1V"
+                        target="_blank">
+                        Zoom</a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/6JWneERxC5MjaBbT7" target="_blank">
+                        Quiz 7
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>8</td>
+                    <td>10 June</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1rLYp9-GVf7bfzpJCn7sTLkcOKWZ7rO6h/view?usp=sharing"
+                        target="_blank"
+                        >Hypothesis Testing 2</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/lIZFmPhtW8bk1-aU41A0CXrDStBWGRl8Z7o2d4k2Q9YY0NPk7_q9gEXrSqDV6gwV.0_Jkme3rUO_wRiNR"
+                        target="_blank"
+                        >Zoom</a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/dkyNW7hAvB2ix7yp6" target="_blank">
+                        Quiz 8
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>15 June</td>
+                    <td class="out">
+                      <a
+                        href="https://drive.google.com/file/d/1Yxs_kt468dB9VrautetO9e9jaoK22sRO/view?usp=sharing"
+                        target="_blank"
+                      >
+                        <!-- Hypothesis Testing: p-values, Statistical Tests -->
+                        Linear Regression
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a
+                        href="https://brown.zoom.us/rec/share/-R6chlLMDUmqu92C2YL43Eim9fBPH9dLLdpxs6WHMGJYLSgjxp3unlg5FjxezB4P.yPppP7z-31YWLuPC"
+                        target="_blank">
+                        Zoom
+                        </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/YFXLuswvgGgSgYxF7" target="_blank">
+                        Quiz 9
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>17 June</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1FbBzSQnYpNqdI8ppdkmjDC9B0BQsLzka/view?usp=sharing" target="_blank">
+                         <!-- Hypothesis Testing: Linear Regression -->
+                        Non-parametric Methods
+                        </a> (<a href="https://drive.google.com/file/d/1wXqZW6_G-pnluC2KPDB8ROoUH6fkf5Ju/view?usp=sharing" target="_blank">Code</a>)
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/nTUc36WgSSKQPP6ltapKTle1eW229lpyFdYycCinbpBCIL-iEptzLqbZ9UAAUoQ.UIhe-8p8Jub2oVTK" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/fjmVgTGhNGCyEDp26" target="_blank">
+                        Quiz 10
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>22 June</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1TK1YQFgKjFsFc8yd6P97sz_hj2nU9W7i/view?usp=sharing" target="_blank">
+                         <!-- Hypothesis Testing: Mulitple Hypothesis Pitfall -->
+                         P Hacking
+                         </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/daJ2vjnLuVqCCjlE4eYwSsUwwboekSL6E_zMevMKMEvXgzeJPfSeUxXm_a3x0dtP.W6NXG1gbC0l5zGuw" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/AoMvYow5YgV3qs8aA" target="_blank">
+                        Quiz 11
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>24 June</td>
+                    <td class='out'>
+                      <a href="https://drive.google.com/file/d/1fD4P8OUwgH3NDmeOhSOBHFo0oYEca-wD/view?usp=sharing" target="_blank">Text Processing</a> (<a href="https://drive.google.com/file/d/1i3ahvDwk4YXS-FnU9zqXrz9PHxBJZKXi/view?usp=sharing">Code</a>)
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/j0-OsjK0Y2waIROfYDJ5YmxSu0X2UFzmffqlwtujQnBCwk5M39sKkPOheliu9EZW.x5hwlyiBmPVBxv78" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/ocaMca5wcgNiKTAt8" target="_blank">
+                        Quiz 12
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>29 June</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1JwudUikuvwyF_NUU1LrZ1HCsTWq0tal-/view?usp=sharing" target="_blank">
+                        Intro ML
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/mZXmMeW8zL93REUr77Wb6gie2FclAWqBy9uuQ8D6smRj6qVYJZkK2-TgYXv6w-h3.g6uthK_ySbehxIXU" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/Bf88nUFkG6ve6De77">
+                        Quiz 13
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>1 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/10QQWEDu0CAjK2G0ltXw93Zs_ErowpPby/view?usp=sharing" target="_blank">
+                      Unsupervised Learning
+                        </a
+                      >
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/IFY4BMNLOzXaxNrZCX01kMyoi4ZSsZXEr6f7Ays4NuzW9nOYY5L0wwa8cn9mkvTo.mBFsNCtIvt8BV09A" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/GiAenNQSeDF5WPdT8" target="_blank">
+                        Quiz 14
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>6 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1bxpvcEcr_zynP8lLqkhqNnROtJm6pCv-/view?usp=sharing" target="_blank">Supervised Learning/Classification</a>
+                    </td>
+                    <td class="out"><a href="https://brown.zoom.us/rec/share/Vs_M3sTGGfZ7D6l2LDznpCC7HPESVehKiDtbiyTbg_Wc-dQffb96fPXMa2tVr0Un.2mWOGgwvw4yISDrX" target="_blank">Zoom</a></td>
+                    <td class="out">
+                      <a href="https://forms.gle/XCYdbWqYzYUixQMM9" target="_blank">Quiz 15</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>8 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1P4eKMzYfLjcPLYqro0SWGTTYF5WtsMB3/view?usp=sharing" target="_blank">
+                        Regularization
+                        </a> (<a href="https://drive.google.com/file/d/1PfIrP2nCWlJiETeQNLdYCWtsjFAAIC8c/view?usp=sharing" target="_blank">Code</a>)
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/dnJA0hNarAhU6t8qt-1DVL8WBnB7Oias0-oZPkr4U1Lf2HIQbmqVI0L_2E1ofeh9.61poqGMvsfSETU1n?startTime=1625754567000" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/rewoNSkCeAxHVQzh6" target="_blank">
+                        Quiz 16
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>13 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1ZcRfLPQjUGmYRcfUgAgCMd9fJVMEFBMN/view?usp=sharing" target="_blank">
+                        Data Viz
+                        </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/MQXuKxljbZS9Rnel9NvLqzg542-4KqMp15s8r6c2ArKcIan6ths3cZ2GwFywbRyZ.3Ot4XvgaYgUBrcLD" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/hVD4W9MHzgAy4rKh8" class="_blank">
+                        Quiz 17
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>15 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1wojDe_wi4_ncGXpvYx7wrMec3xGmFsc0/view?usp=sharing" target="_blank">Deep Learning</a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/LonW8Pdpkhb7aTANJfWfM8yFe__fRyO7xUAD8TYxG2agu0KSoyKU1qsI4xKM3Jwf.bkL5H8zx8gw6xkmJ?startTime=1626359338000" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/P5d5egkBdNjWgrhTA" target="_blank">
+                        Quiz 18
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>20 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/drive/folders/1tGvK5AynM7YhMqoA_0q9jNrq8ppXxnOZ?usp=sharing" target="_blank">
+                        More Advanced NLP: Topic Modeling and Distributional Semantics
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/vfR05_YGPvukzaA09FB93ecep0WyTJ7tDDuk_Q2pvJVP8ki40EQ1QrLYnKzl3KLm.9t8hH4YEV8bdOkLA?startTime=1626791181000" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/3chYUanhKC3kMdLr5" target="_blank">
+                        Quiz 19
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>22 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1nRqSXAwlCSAfCvjVyfb6X5MGyW9whQbT/view?usp=sharing" target="_blank">
+                        Time Series
+                        </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/yIIOPchNP3CoiuPGvA7oTmZj2wfek_Q7V_Ay9EoAvdOvpJDsBnF_S9Ug3W9cyc2g.BSX7l_7RghvuiE3O?startTime=1626964126000" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/mb7d95KW69YPp6QaA" target="_blank">
+                        Quiz 20
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>27 July</td>
+                    <td class="out">
+                      <a href="https://drive.google.com/file/d/1wsgiOz2tbZq1aoToDz1etXbZ_Sh-M4lR/view?usp=sharing" target="_blank">ML Fairness</a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/9xrdPlQBJkcndo3zKU8WHO136an6rxpOVphFtZ_GN0YtIrX3pWUlIkPcoTxjS1VQ.FXbWUERn8MXauSBn" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td class="out">
+                      <a href="https://forms.gle/8eD36bhksBJixess8" target="_blank">
+                        Quiz 21
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>29 July</td>
+                    <td>
+                      <a href="https://drive.google.com/file/d/1tcYgfvAHR7_D_SvZeBFiTGPQeNLEpExp/view?usp=sharing" target="_blank">Matrix Factorization</a>
+                    </td>
+                    <td class="out">
+                      <a href="https://brown.zoom.us/rec/share/pyMO7zA62t_cUnmaCqLfFW-pFl3_6S1y_Rkk6B1ueMQ_GvGiqIshrXzpZUXrQqCB.7JEoBWHKVs6fpcpP?startTime=1627568951000" target="_blank">
+                        Zoom
+                      </a>
+                    </td>
+                    <td>
+                      No Quiz
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="footer">
+        <div class="container">
+          <p>
+            &copy; 2021 CS1951A Staff | Computer Science Department | Brown
+            University
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
