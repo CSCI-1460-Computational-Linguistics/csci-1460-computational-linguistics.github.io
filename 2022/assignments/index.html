@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="CS1460" />
+    <meta name="description" content="Website for Brown CS1460" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        document.getElementById("assignments-nav").className += " active";
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../style/main.css" />
+    <title>CS1460 | Assignments</title>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="other-content-container">
+        <!-- Header-->
+        <div class="container-fluid" id="header">
+          <!-- Navbar-->
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-controls="#navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">cs1460</a>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-nav" href="../index.html"
+                  >home</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="resources-nav"
+                  href="../resources/index.html"
+                  >resources</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="slides-nav"
+                  href="../slides/index.html"
+                  >lectures</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="assignments-nav"
+                  href="../assignments/index.html"
+                  >assignments</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="staff-nav"
+                  href="../staff/index.html"
+                  >staff</a
+                >
+                <a
+                  class="nav-item nav-link"
+                  id="hours-nav"
+                  href="../hours/index.html"
+                  >hours</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="container" id="copy">
+          <div class="row" id="homeworks-row">
+            <div class="col-md-12">
+              <div id="homeworks">
+                <h1>homeworks</h1>
+                <table class="table table-hover" id="assignments-table">
+                  <thead>
+                    <tr>
+                      <th>Assignment</th>
+                      <th>Out</th>
+                      <th>Due</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--tr id="homework-0-tr">
+                      <td class="out">
+                        <a href="./getting-started/getting-started.html" target="_blank"
+                          >Getting Started</a
+                        >
+                      </td>
+                      <td>May 14</td>
+                      <td>May 25</td>
+                    </tr-->
+                    <tr id="homework-1-tr">
+                      <td class='out'>
+                        <!--a href="./sql/sql.html" target="_blank" >SQL</a -->
+                        <a href="https://colab.research.google.com/drive/1NyZ5aUws5h2-bOHxr8QM3fc8Uwh5NIGf?usp=sharing" target="_blank" >BOW Text Classifier</a>
+                      </td>
+                      <td>September 20</td>
+                      <td>September 29</td>
+                    </tr>
+                    <tr id="homework-2-tr">
+                      <td class="out">
+                        <a href="https://colab.research.google.com/drive/1ubH2Dz1OUQxsl6KrQJlrAYceeOdjQTIv?usp=sharing" target="_blank" >Topic Modeling</a
+                        >
+                      </td>
+                      <td>October 7</td>
+                      <td>October 16</td>
+                    </tr>
+                    <tr id="homework-3-tr">
+                      <td class="out">
+                        <a href="https://colab.research.google.com/drive/1daEe4XR9gVcjJ5qzUX6qqnhghoH4QsJ9?usp=sharing" target="_blank">BERT Finetuning</a>
+                      </td>
+                      <td>October 19</td>
+                      <td>October 28</td>
+                    </tr>
+                    <tr id="homework-4-tr">
+                      <td class="out">
+                        <a href="https://colab.research.google.com/drive/1i7AgYYFHU4N9wNoEZflvlcvUJx80k1zR?usp=sharing" target="_blank">Machine Translation</a>
+                      </td>
+                      <td>November 1</td>
+                      <td>November 10</td>
+                    </tr>
+                    <tr id="homework-src-tr">
+                      <td class="out">
+                        <a href="https://docs.google.com/document/d/1QcjPcrxMw56gfjVqTAAzip1QHbkfKIEUQzBi2hcKnsc/edit?usp=sharing" target="_blank">Socially Responsible Computing Written Assignment (Part 1)</a>
+                      </td>
+                      <td>November 4</td>
+                      <td>November 14</td>
+                    </tr>
+                    <tr id="homework-5-tr">
+                      <td class="out">
+                        <a href="https://colab.research.google.com/drive/1LG2IEEGtdQ0bGkFRFN8viLqzeTiQizFo?usp=sharing" target="_blank">
+                         Dependency Parsing 
+                        </a>
+                      </td>
+                      <td>November 23</td>
+                      <td>December 6</td>
+                    </tr>
+                    <tr id="homework-6-tr">
+                      <td class="out">
+                        <a href="https://docs.google.com/document/d/e/2PACX-1vS9uI9J2x6ZBjQVT1TZj0cRBKiXLumLLfQmUK0lMt1ODsraNA58FMkDmXJdNm42mAfZhRDArubIfi2a/pub" target="_blank">
+                         Final Project
+                        </a>
+                      </td>
+                      <td>December 6</td>
+                      <td>December 19</td>
+                    </tr>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="footer">
+        <div class="container">
+          <p>
+            &copy; 2021 CS1460 Staff | Computer Science Department | Brown
+            University
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
