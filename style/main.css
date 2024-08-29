@@ -454,13 +454,14 @@ svg {
 #assignments-table {
   font-size: 1.2rem;
 }
-#assignments-table tr {
-  /* background-color: transparent; */
-  /* border: 1px solid black; */
-  /* border-radius: 20px; */
-}
 #assignments-table td {
   vertical-align: middle;
+}
+#assignments-table tr {
+  background-color: #efefef;
+}
+#assignments-table tr:hover {
+  background-color: #e5e5e5;
 }
 #assignments-table tr:nth-child(2n) {
   background-color: #d1d1d1;
