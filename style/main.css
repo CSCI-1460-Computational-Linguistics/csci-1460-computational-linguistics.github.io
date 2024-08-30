@@ -492,9 +492,6 @@ svg {
   object-position: 0 0;
 }
 
-/* FOR FUTURE EDITORS OF THE WEBSITE: DELETE THIS IF YOU PLAN TO USE BOOTSTRAP WITH THE HOMEPAGE.
-   THIS CSS ONLY EXISTS BECAUSE BOOTSTRAP CAUSED A D3 GRAPH TO BE INCOMPATIBLE. */
-
 .flex-container {
   width: 1140px;
   max-width: 100%;
@@ -533,6 +530,10 @@ svg {
   .left-side {
     width: 100%;
   }
+
+  #assignments-table {
+    font-size: 1.0rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -549,5 +550,18 @@ svg {
 
   .left-side {
     width: 100%;
+  }
+
+  #assignments-table {
+    font-size: 0.95rem;
+  }
+  #assignments-table tr td:first-child *,
+  #assignments-table tr th:first-child * {
+    display: none;
+  }
+  #assignments-table tr td:first-child,
+  #assignments-table tr th:first-child {
+    padding: 0;
+    width: 6px;
   }
 }
