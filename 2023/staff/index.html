@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="CS1460">
+  <meta name="description" content="Website for Brown CS1460">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript">
+    function swap(img) {
+        var old = img.attr('src');
+        img.attr('src', img.attr('hsrc'));
+        img.attr('hsrc', old);
+    }
+
+    $(document).ready(function() {
+        document.getElementById('staff-nav').className += ' active';
+        $('.profile')
+            .mouseenter(function() { swap($(this)); })
+            .mouseleave(function() { swap($(this)); });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="../style/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+  <title>CS1460 | Staff</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="other-content-container">
+  <!-- Header-->
+   <div class="container-fluid" id="header">
+    <!-- Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <a class="navbar-brand" href="../index.html">cs1460 </a>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link"
+            id="home-nav"
+            href="../index.html"
+            >home</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="resources-nav"
+            href="../resources/index.html"
+            >resources</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="slides-nav"
+            href="../slides/index.html"
+            >lectures</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="assignments-nav"
+            href="../assignments/index.html"
+            >assignments</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="staff-nav"
+            href="../staff/index.html"
+            >staff</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="hours-nav"
+            href="../hours/index.html"
+            >hours</a
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container" id="copy">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class = "staff-introduction">
+            <h1 id="staff-header">staff</h1>
+
+            <div id = "staff-description">
+                <p>You may contact the Head TAs at
+				    <a class="red" href="mailto:cs1460headtas@lists.brown.edu">cs1460headtas@lists.brown.edu</a>.
+                </p>
+
+                <p>To email an individual TA, use
+                  <tt>&lt;login&gt;@cs.brown.edu</tt>.
+                  Submit regrade requests through Gradescope.
+                  For all other purposes please email the HTA list.
+                </p>
+            </div>
+        </div>
+
+        <div class="professor">
+            <h2>professor</h2>
+            <div class="row">
+              <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                  src="../res/img/ellie/ellie_front.jpeg"
+                  hsrc="../res/img/ellie/ellie_hover.png">
+                <p class="name">Ellie Pavlick</p>
+                <p class="login"></p>
+              </div>
+            </div>
+        </div>
+
+        <div class="headtas">
+            <h2>HTAs</h2>
+            <div class="row">
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                src="../res/img/alyssa/alyssa_front.jpg"
+                hsrc="../res/img/alyssa/alyssa_hover.jpg">
+              <p class="name">Alyssa Loo</p>
+              <p class="login">aloo1</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                  src="../res/img/peter/peter_front.jpg"
+                  hsrc="../res/img/peter/peter_hover.jpg">
+                <p class="name">Peter Curtin</p>
+                <p class="login">pcurtin1</p>
+              </div>
+            </div>
+        </div>
+
+      
+
+        <div class="utas">
+            <h2>UTAs</h2>
+            <div class="row">
+              <div class="col-md-4 staff" title=""> <!--put chatgpt-generated title here-->
+                  <img class="profile img-fluid"
+                   src="../res/img/adam/adam_front.jpg"
+                  hsrc="../res/img/adam/adam_hover.jpg">
+                  <p class="name">Adam Bredvik</p>
+                  <p class="login">abredvik</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/aidan/aidan_front.jpg"
+                hsrc="../res/img/aidan/aidan_hover.jpg">
+                <p class="name">Aidan Harbison</p>
+                <p class="login">aharbiso</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/alex/alex_front.jpg"
+                  hsrc="../res/img/alex/alex_hover.jpg">
+                  <p class="name">Alex Duchnowski</p>
+                  <p class="login">aduchnow</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/david/david_front.jpg"
+                  hsrc="../res/img/david/david_hover.jpg">
+                  <p class="name">David Lubawski</p>
+                  <p class="login">dlubawsk</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/emily/emily_front.jpg"
+                  hsrc="../res/img/emily/emily_hover.png">
+                  <p class="name">Emily Ye</p>
+                  <p class="login">eye4</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/john/john_front.png"
+                  hsrc="../res/img/john/john_hover.jpg">
+                  <p class="name">John Wu</p>
+                  <p class="login">jwu175</p>
+              </div>
+            </div>
+            <div class="row">
+	            <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/michelle/michelle_front.jpg"
+                  hsrc="../res/img/michelle/michelle_hover.jpg">
+                  <p class="name">Michelle Liu</p>
+                  <p class="login">mliu107</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/noah/noah_front.jpg"
+                hsrc="../res/img/noah/noah_hover.jpg">
+                <p class="name">Noah Foster</p>
+                <p class="login">nfoster3</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/qinan/qinan_front.jpg"
+                hsrc="../res/img/qinan/qinan_hover.jpg">
+                <p class="name">Qinan Yu</p>
+                <p class="login">qyu10</p>
+              </div>
+            </div>
+            <div class="row">
+	            <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/ray/ray_front.jpg"
+                  hsrc="../res/img/ray/ray_hover.jpg">
+                  <p class="name">Raymond Dai</p>
+                  <p class="login">rdai4</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/sid/sid_front.jpg"
+                hsrc="../res/img/sid/sid_hover.jpg">
+                <p class="name">Siddharth Boppana</p>
+                <p class="login">sboppana</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/siming/siming_front.jpg"
+                hsrc="../res/img/siming/siming_hover.jpg">
+                <p class="name">Siming Feng</p>
+                <p class="login">sfeng22</p>
+              </div>
+            </div>
+            <div class="row">
+	            <div class="col-md-4 staff" title="">
+                  <img class="profile img-fluid"
+                   src="../res/img/suraj/suraj_front.jpg"
+                  hsrc="../res/img/suraj/suraj_hover.jpg">
+                  <p class="name">Suraj Anand</p>
+                  <p class="login">sanand14</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="etas">
+            <h2>STAs</h2>
+            <div class="row">
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/nick/nick_front.jpg"
+                hsrc="../res/img/nick/nick_hover.jpg">
+                <p class="name">Nick Masi</p>
+                <p class="login">nmasi</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <img class="profile img-fluid"
+                 src="../res/img/ray/ray_front.jpg"
+                hsrc="../res/img/ray/ray_hover.jpg">
+                <p class="name">Raymond Dai</p>
+                <p class="login">rdai4</p>
+              </div>
+            </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid" id="footer">
+    <div class="container">
+      <p>&copy; 2023 CS1460 Staff | Computer Science Department | Brown University </p>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
