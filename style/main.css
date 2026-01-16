@@ -618,3 +618,25 @@ svg {
     width: 6px;
   }
 }
+
+/* Alt Mode Styles */
+html.alt-mode {
+  --alt-font: "Open Sans", sans-serif;
+}
+
+html.alt-mode body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* 
+html.alt-mode body::before,
+html.alt-mode body::after {
+  display: none;
+}
+*/
+
+.alt-on { display: none; }
+html.alt-mode .alt-on { display: inline; }
+.alt-off { display: inline; }
+html.alt-mode .alt-off { display: none; }
+
