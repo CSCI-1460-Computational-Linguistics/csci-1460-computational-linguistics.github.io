@@ -300,6 +300,13 @@ p.quiz-desc {
 .staff .login {
   font-family: "Inconsolata";
 }
+.staff .blurb {
+  font-family: "IM Fell English", serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 8px;
+  color: #4a4a4a;
+}
 tt {
   font-family: "Inconsolata";
 }
