@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="/js/altmode.js"></script>
   <script type="text/javascript">
     function swap(img) {
         var old = img.attr('src');
@@ -16,7 +17,11 @@
     }
 
     $(document).ready(function() {
-        document.getElementById('staff-nav').className += ' active';
+        $("#header").load("/shared/header.html", function() {
+          $("#staff-nav").addClass("active");
+        });
+
+        // TODO: when the other image is not square, a glitch happens when hovering over the empty space
         $('.profile')
             .mouseenter(function() { swap($(this)); })
             .mouseleave(function() { swap($(this)); });

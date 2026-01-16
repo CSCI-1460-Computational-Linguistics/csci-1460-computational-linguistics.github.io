@@ -16,9 +16,12 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/altmode.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        document.getElementById("resources-nav").className += " active";
+        $("#header").load("/shared/header.html", function () {
+          $("#resources-nav").addClass("active");
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
