@@ -16,7 +16,6 @@ html {
 body {
   font-family: "IM Fell English", serif;
   font-weight: 400;
-  /* background-color: #ffebeb; /*change later!*/
   background-color: #F3DEC4;
   font-size: 1.05rem;
   color: #242325;
@@ -621,11 +620,11 @@ svg {
 
 /* Alt Mode Styles */
 html.alt-mode {
-  --alt-font: "Open Sans", sans-serif;
+  --alt-font: "IM Fell English", serif;
 }
 
 html.alt-mode body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "IM Fell English", serif;
 }
 
 /* 
