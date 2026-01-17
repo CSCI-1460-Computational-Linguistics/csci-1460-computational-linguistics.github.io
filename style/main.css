@@ -110,6 +110,10 @@ a:visited:active {
   z-index: 999;
 }
 
+#header:empty {
+  height: 20px;
+}
+
 #header nav {
   padding-top: 0;
   padding-bottom: 0;
