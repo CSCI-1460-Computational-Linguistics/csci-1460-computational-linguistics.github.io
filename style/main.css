@@ -637,6 +637,10 @@ html.alt-mode {
   --alt-font: "IM Fell English", serif;
 }
 
+html.alt-mode * {
+  cursor: url('/res/img/Shakespeare_oval.png') 0 0, auto !important;
+}
+
 html.alt-mode body {
   font-family: "IM Fell English", serif;
 }
