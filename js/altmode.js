@@ -22,9 +22,12 @@ function toggleAltMode() {
 }
 
 async function loadTable() {
+    if (!window.location.pathname.includes('/assignments/')) {
+        return;
+    }
     const tableDiv = document.getElementById('homeworks');
     if (!tableDiv) {
-        console.warn('Could not find homeworks table div');
+        console.warn('Could not find table div');
         return;
     }
     const res = await fetch(window.location.href, { method: 'HEAD' });
