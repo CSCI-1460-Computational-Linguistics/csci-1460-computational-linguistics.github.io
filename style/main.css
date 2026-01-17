@@ -502,11 +502,9 @@ svg {
 #assignments-table td {
   vertical-align: middle;
 }
-#assignments-table thead tr,
-#slides-table thead tr {
-  background-color: #d8c4ac;
-  color: #242325;
-  font-weight: 700;
+#assignments-table th,
+#slides-table th {
+  background-color: #453921;
 }
 #assignments-table tr,
 #slides-table tr {
