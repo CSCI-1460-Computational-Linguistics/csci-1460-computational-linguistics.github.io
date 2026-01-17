@@ -66,6 +66,10 @@ h6 {
   letter-spacing: 0.05em;
 }
 
+h1 {
+  font-size: 2.2rem;
+}
+
 .test {
   /* background-color: #ffd4d4;
     padding: 10px;
