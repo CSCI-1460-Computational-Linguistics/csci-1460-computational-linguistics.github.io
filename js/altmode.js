@@ -46,11 +46,14 @@ async function loadTable() {
 
     const list = [
         [
-            '2026-01-17',
-            '2026-01-28',
+            // '2026-01-17',
+            // '2026-01-28',
+            null,
+            null,
             "https://drive.google.com/drive/folders/18bbpRdrymTPmR5svUE5qhy8r5B5k9URS?usp=sharing",
         ], [
-            '2026-01-28',
+            // '2026-01-28',
+            null,
             null,
             "https://drive.google.com/drive/folders/1uTOZ61QEEfpXLY57ZgofIKPbLefSPpTF?usp=sharing",
         ], [
