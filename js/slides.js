@@ -229,7 +229,8 @@ const lectures = [
     {
         'num': 22,
         'date': '3 Dec',
-        'title': 'Interpretability Part 1: Interpretability Overview, and "What happened to Core NLP?"',
+        // 'title': 'Interpretability Part 1: Interpretability Overview, and "What happened to Core NLP?"',
+        'html_title': 'Interpretability Part 1: Interpretability Overview, <br/>and "What happened to Core NLP?',
         'url_slides': null,
         'url_recording': 'https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a54c8bc2-1111-4ac5-835e-b1d900e86ca2',
         'url_quiz': null,
