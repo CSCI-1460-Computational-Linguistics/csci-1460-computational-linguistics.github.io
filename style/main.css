@@ -666,6 +666,18 @@ svg {
   }
 }
 
+@media (max-width: 992px) {
+  html.alt-mode #assignments-table tr td:first-child *,
+  html.alt-mode #assignments-table tr th:first-child * {
+    display: none;
+  }
+  html.alt-mode #assignments-table tr td:first-child,
+  html.alt-mode #assignments-table tr th:first-child {
+    padding: 0;
+    width: 6px;
+  }
+}
+
 img {
   dynamic-range-limit: standard;
 }
