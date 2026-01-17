@@ -502,17 +502,23 @@ svg {
 #assignments-table td {
   vertical-align: middle;
 }
+#assignments-table thead tr,
+#slides-table thead tr {
+  background-color: #d8c4ac;
+  color: #242325;
+  font-weight: 700;
+}
 #assignments-table tr,
 #slides-table tr {
-  background-color: #efefef;
+  background-color: #f1e5d4;
 }
 #assignments-table tr:hover,
 #slides-table tr:hover {
-  background-color: #e5e5e5;
+  background-color: #e5d6c0;
 }
 #assignments-table tr:nth-child(2n),
 #slides-table tr:nth-child(2n) {
-  background-color: #d1d1d1;
+  background-color: #e8d7bf;
 }
 #assignments-table tr:nth-child(2n):hover,
 #slides-table tr:nth-child(2n):hover {
@@ -638,7 +644,7 @@ html.alt-mode {
 }
 
 html.alt-mode * {
-  cursor: url('/res/img/Shakespeare_oval.png') 0 0, auto !important;
+  cursor: url('../res/img/Shakespeare_oval.png') 0 0, auto !important;
 }
 
 html.alt-mode body {
