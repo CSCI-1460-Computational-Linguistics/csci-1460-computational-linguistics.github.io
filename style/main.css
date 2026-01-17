@@ -628,6 +628,10 @@ svg {
   }
 }
 
+img {
+  dynamic-range-limit: standard;
+}
+
 /* Alt Mode Styles */
 html.alt-mode {
   --alt-font: "IM Fell English", serif;
@@ -648,4 +652,3 @@ html.alt-mode body::after {
 html.alt-mode .alt-on { display: inline; }
 .alt-off { display: inline; }
 html.alt-mode .alt-off { display: none; }
-
