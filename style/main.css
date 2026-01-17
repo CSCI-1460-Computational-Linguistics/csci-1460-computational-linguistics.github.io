@@ -649,6 +649,6 @@ html.alt-mode body::after {
 */
 
 .alt-on { display: none; }
-html.alt-mode .alt-on { display: inline; }
-.alt-off { display: inline; }
+html.alt-mode .alt-on { display: revert; }
+.alt-off { display: revert; }
 html.alt-mode .alt-off { display: none; }
