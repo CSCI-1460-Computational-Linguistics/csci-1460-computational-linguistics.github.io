@@ -17,6 +17,13 @@
     $(document).ready(function () {
       $("#header").load("./shared/header.html", function () {
         $("#home-nav").addClass("active");
+
+        $("#header a").each(function () {
+          const href = $(this).attr("href");
+          if (href && href.startsWith("../")) {
+            $(this).attr("href", href.replace("../", ""));
+          }
+        });
       });
     });
   </script>
