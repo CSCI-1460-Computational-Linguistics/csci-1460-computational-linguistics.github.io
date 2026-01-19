@@ -272,64 +272,6 @@ const lectures = [
     }
 ];
 
-function cmpListToHTML() {
-    // temp function to make sure lectures content matches the actual HTML
-    const table = document.getElementById('slides-table');
-    if (!table) {
-        console.warn('Could not find table with id slides-table');
-        return;
-    }
-
-    // skip header row: i = 1
-    for (let i = 1; i < table.rows.length; i++) {
-        const row = table.rows[i];
-        const lecture = lectures[i - 1];
-        if (!lecture) {
-            console.warn(`No lecture data for row ${i}`);
-            continue;
-        }
-
-        const numCell = row.cells[0];
-        const numText = lecture.num !== null ? lecture.num.toString() : '';
-        if (numCell.textContent.trim() !== numText) {
-            console.warn(`Number mismatch in row ${i}: table has "${numCell.textContent.trim()}", lectures has "${numText}"`);
-        }
-        
-        const dateCell = row.cells[1];
-        if (dateCell.textContent.trim() !== lecture.date) {
-            console.warn(`Date mismatch in row ${i}: table has "${dateCell.textContent.trim()}", lectures has "${lecture.date}"`);
-        }
-
-        const titleCell = row.cells[2];
-        if (lecture.html_title) {
-            console.log(`Row ${i}: has html_title with links`);
-        } else if (titleCell.textContent.trim() !== lecture.title) {
-            console.warn(`Title mismatch in row ${i}: table has "${titleCell.textContent.trim()}", lectures has "${lecture.title}"`);
-        }
-
-        const slidesCell = row.cells[3];
-        const slidesLink = slidesCell.querySelector('a');
-        const slidesURL = slidesLink ? slidesLink.href : null;
-        if (slidesURL !== lecture.url_slides) {
-            console.warn(`Slides URL mismatch in row ${i}: table has "${slidesURL}", lectures has "${lecture.url_slides}"`);
-        }
-
-        const recordingCell = row.cells[4];
-        const recordingLink = recordingCell.querySelector('a');
-        const recordingURL = recordingLink ? recordingLink.href : null;
-        if (recordingURL !== lecture.url_recording) {
-            console.warn(`Recording URL mismatch in row ${i}: table has "${recordingURL}", lectures has "${lecture.url_recording}"`);
-        }
-
-        const quizCell = row.cells[5];
-        const quizLink = quizCell.querySelector('a');
-        const quizURL = quizLink ? quizLink.href : null;
-        if (quizURL !== lecture.url_quiz) {
-            console.warn(`Quiz URL mismatch in row ${i}: table has "${quizURL}", lectures has "${lecture.url_quiz}"`);
-        }
-    }
-}
-
 function loadTable() {
     const table = document.getElementById('slides-table');
     const tbody = table?.querySelector('tbody');
@@ -399,9 +341,7 @@ const createOutLinkTd = (text, url) => {
 
 
 if (document.readyState === 'loading') {
-    // document.addEventListener('DOMContentLoaded', cmpListToHTML);
     document.addEventListener('DOMContentLoaded', loadTable);
 } else {
-    // cmpListToHTML();
     loadTable();
 }
