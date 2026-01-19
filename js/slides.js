@@ -255,6 +255,7 @@ function cmpListToHTML() {
         return;
     }
 
+    // skip header row: i = 1
     for (let i = 1; i < table.rows.length; i++) {
         const row = table.rows[i];
         const lecture = lectures[i - 1];
@@ -338,6 +339,10 @@ function loadTable() {
         }
         tr.appendChild(tdTitle);
 
+        const useGray = lecture.url_slides === null && lecture.url_recording === null && lecture.url_quiz === null;
+        if (useGray) {
+            tr.classList.add('unreleased');
+        }
         // Slides
         const tdSlides = createOutLinkTd('Slides', lecture.url_slides);
         tr.appendChild(tdSlides);
