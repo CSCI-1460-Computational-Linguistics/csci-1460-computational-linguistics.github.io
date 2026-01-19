@@ -6,6 +6,7 @@ function initAltMode() {
     const isEnabled = localStorage.getItem('altMode') === '1';
     if (isEnabled) {
         document.documentElement.classList.add('alt-mode');
+        document.documentElement.style.setProperty('--main-font', 'var(--alt-font)');
     }
 }
 
@@ -16,8 +17,10 @@ function toggleAltMode() {
 
     if (newState) {
         document.documentElement.classList.add('alt-mode');
+        document.documentElement.style.setProperty('--main-font', 'var(--alt-font)');
     } else {
         document.documentElement.classList.remove('alt-mode');
+        document.documentElement.style.setProperty('--main-font', 'var(--ori-font)');
     }
 }
 

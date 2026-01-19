@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap");
@@ -8,11 +9,17 @@
   src: url("./fonts/Europa-Regular.otf");
 }
 
+:root {
+  --main-font: var(--ori-font);
+  --ori-font: "Roboto", sans-serif;
+  --alt-font: "IM Fell English", serif;
+}
+
 html {
 }
 
 body {
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
   font-weight: 400;
   background-color: #F3DEC4;
   font-size: 1.05rem;
@@ -58,7 +65,7 @@ h5,
 h6 {
   color: #242325;
   /* color: black; */
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--main-font);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -95,7 +102,7 @@ a:visited:active {
 }
 
 #header {
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
   font-size: 17px;
 
   position: fixed;
@@ -310,7 +317,7 @@ p.quiz-desc {
   font-family: "Inconsolata", monospace;
 }
 .staff .blurb {
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
   font-size: 0.9rem;
   font-style: italic;
   margin-top: 8px;
@@ -454,13 +461,13 @@ svg {
 }
 
 .legend {
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
   font-size: 1em;
   margin-top: 0px;
 }
 
 .pie text {
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
   fill: #000;
 }
 
@@ -482,7 +489,7 @@ svg {
 
 .xaxis .tick {
   font-size: 13px;
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
 }
 
 .yaxis line {
@@ -494,7 +501,7 @@ svg {
 
 .yaxis .tick {
   font-size: 13px;
-  font-family: "IM Fell English", serif;
+  font-family: var(--main-font);
 }
 
 .toolTip {
@@ -685,16 +692,8 @@ img {
 }
 
 /* Alt Mode Styles */
-html.alt-mode {
-  --alt-font: "IM Fell English", serif;
-}
-
 html.alt-mode * {
   cursor: url('../res/img/Shakespeare_oval.png') 0 0, auto !important;
-}
-
-html.alt-mode body {
-  font-family: "IM Fell English", serif;
 }
 
 /* 
