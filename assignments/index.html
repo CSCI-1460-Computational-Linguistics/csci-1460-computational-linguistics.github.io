@@ -16,9 +16,12 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/altmode.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        document.getElementById("assignments-nav").className += " active";
+        $("#header").load("../shared/header.html", function () {
+          $("#assignments-nav").addClass("active");
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
@@ -89,89 +92,145 @@
             <div class="col-md-12">
               <div id="homeworks">
                 <h1>homeworks</h1>
-                <table class="table table-hover" id="assignments-table">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Assignment</th>
-                      <th>Out</th>
-                      <th>Due</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- TODO: make this pretty -->
-                    <!--tr id="homework-0-tr">
-                      <td class="out">
-                        <a href="./getting-started/getting-started.html" target="_blank"
-                          >Getting Started</a
-                        >
-                      </td>
-                      <td>May 14</td>
-                      <td>May 25</td>
-                    </tr-->
-                    <tr id="homework-1-tr">
-                      <td class="assignment-img-container">
-                        <img src="../res/img/assignments/bow-text-classifier.jpg">
-                      </td>
-                      <td class="out">
-                        <a href="https://drive.google.com/drive/folders/18bbpRdrymTPmR5svUE5qhy8r5B5k9URS?usp=sharing" target="_blank">BOW Text Classifier</a>
-                      </td>
-                      <td>12 Sep</td>
-                      <td>24 Sep</td>
-                    </tr>
-                    <tr id="homework-2-tr">
-                      <td class="assignment-img-container">
-                        <img src="../res/img/assignments/topic-modeling.jpg">
-                      </td>
-                      <td class="out">
-                        <a href="https://drive.google.com/drive/folders/1uTOZ61QEEfpXLY57ZgofIKPbLefSPpTF?usp=sharing" target="_blank">Topic Modeling</a>
-                      </td>
-                      <td>26 Sept</td>
-                      <td>8 Oct</td>
-                    </tr>
-                    <tr id="homework-3-tr">
-                      <td class="assignment-img-container">
-                        <img src="../res/img/assignments/machine-translation.jpg">
-                      </td>
-                      <td class="out">
-                        <a href="https://drive.google.com/drive/folders/1JvmspnhJsPDYiRIXyV_-3JkSsEUaYWjl?usp=sharing" target="_blank">Machine Translation</a>
-                      </td>
-                      <td>10 Oct</td>
-                      <td>22 Oct</td>
-                    </tr>
-                    <tr id="homework-4-tr">
-                      <td class="assignment-img-container">
-                        <img src="../res/img/assignments/bert.jpg">
-                      </td>
-                      <td class="out">
-                        <a href="https://drive.google.com/drive/folders/145o1oPyZvLY8Y6nO6Ch_BhBNiekqbT_Y?usp=sharing" target="_blank">BERT Fine-tuning</a>
-                      </td>
-                      <td>24 Oct</td>
-                      <td>7 Nov</td>
-                    </tr>
-                    <tr id="homework-5-tr">
-                      <td class="assignment-img-container">
-                        <img src="../res/img/assignments/dependency-parsing.jpg">
-                      </td>
-                      <td class="out">
-                        <a href="https://drive.google.com/drive/folders/16ndpNklLFwLriCeR14cliR8LNzL0qv7u?usp=sharing" target="_blank">Dependency Parsing</a>
-                      </td>
-                      <td>7 Nov</td>
-                      <td>19 Nov</td>
-                    </tr>
-                    <tr id="homework-6-tr">
-                      <td class="assignment-img-container">
-                        <img src="../res/img/assignments/final-project.jpg">
-                      </td>
-                      <td class="out">
-                        <a href="https://docs.google.com/document/d/1nv5TKtQ8DNH-7gZMCjSXax10TUz-VqNuOy-4HutSZvE/edit?usp=sharing" target="_blank">Final Project</a>
-                      </td>
-                      <td>25 Nov</td>
-                      <td>15 Dec</td>
-                    </tr>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="table table-hover" id="assignments-table">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Assignment</th>
+                        <th>Out</th>
+                        <th>Due</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- TODO: make this pretty -->
+                      <!--tr id="homework-0-tr">
+                        <td class="out">
+                          <a href="./getting-started/getting-started.html" target="_blank"
+                            >Getting Started</a
+                          >
+                        </td>
+                        <td>May 14</td>
+                        <td>May 25</td>
+                      </tr-->
+                      <tr id="homework-1-tr">
+                        <td class="assignment-img-container">
+                          <img src="../res/img/assignments/hw1.jpg">
+                        </td>
+                        <td class="main">
+                          <a>
+                            <span class="alt-off">
+                              BOW Text Classifier
+                            </span>
+                            <span class="alt-on">
+                              The Bag of Words: A Treatise on Textual Judgment
+                            </span>
+                          </a>
+                        </td>
+                        <!-- <td>12 Sep</td> -->
+                        <!-- <td>24 Sep</td> -->
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr id="homework-2-tr">
+                        <td class="assignment-img-container">
+                          <img src="../res/img/assignments/hw2.jpg">
+                        </td>
+                        <td class="main">
+                          <a>
+                            <span class="alt-off">
+                              Topic Modeling
+                            </span>
+                            <span class="alt-on">
+                              The Weaving of Themes: A Treatise on Hidden Discourse
+                            </span>
+                          </a>
+                        </td>
+                        <!-- <td>26 Sept</td> -->
+                        <!-- <td>8 Oct</td> -->
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr id="homework-3-tr">
+                        <td class="assignment-img-container">
+                          <img src="../res/img/assignments/hw3.jpg">
+                        </td>
+                        <td class="main">
+                          <a>
+                            <span class="alt-off">
+                              Dependency Parsing
+                            </span>
+                            <span class="alt-on">
+                              The Bonds of Grammar: A Treatise on Syntactic Order
+                            </span>
+                          </a>
+                        </td>
+                        <!-- <td>7 Nov</td> -->
+                        <!-- <td>19 Nov</td> -->
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr id="homework-4-tr">
+                        <td class="assignment-img-container">
+                          <img src="../res/img/assignments/hw4.jpg">
+                        </td>
+                        <td class="main">
+                          <a>
+                            <span class="alt-off">
+                              BERT Fine-tuning
+                            </span>
+                            <span class="alt-on">
+                              The Refinement of a Learned Tongue: A Treatise on Pretrained Minds
+                            </span>
+                          </a>
+                        </td>
+                        <!-- <td>24 Oct</td> -->
+                        <!-- <td>7 Nov</td> -->
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr id="homework-5-tr">
+                        <td class="assignment-img-container">
+                          <img src="../res/img/assignments/hw5.jpg">
+                        </td>
+                        <td class="main">
+                          <a>
+                            <span class="alt-off">
+                              Machine Translation
+                            </span>
+                            <span class="alt-on">
+                              The Turning of Tongues: A Treatise on Faithful Translation
+                            </span>
+                          </a>
+                        </td>
+                        <!-- <td>10 Oct</td> -->
+                        <!-- <td>22 Oct</td> -->
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr id="homework-6-tr">
+                        <td class="assignment-img-container">
+                          <img src="../res/img/assignments/final_project.jpg">
+                        </td>
+                        <td class="main">
+                          <a>
+                            <span class="alt-off">
+                              Final Project
+                            </span>
+                            <span class="alt-on">
+                              The Grand Endeavor: A Treatise of Independent Design
+                            </span>
+                          </a>
+                        </td>
+                        <!-- <td>25 Nov</td> -->
+                        <!-- <td>15 Dec</td> -->
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +240,7 @@
       <div class="container-fluid" id="footer">
         <div class="container">
           <p>
-            &copy; 2024 CS1460 Staff | Computer Science Department | Brown
+            &copy; 2026 CS1460 Staff | Computer Science Department | Brown
             University
           </p>
         </div>

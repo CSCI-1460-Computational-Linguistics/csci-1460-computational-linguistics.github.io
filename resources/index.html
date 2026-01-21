@@ -16,9 +16,12 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/altmode.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        document.getElementById("resources-nav").className += " active";
+        $("#header").load("../shared/header.html", function () {
+          $("#resources-nav").addClass("active");
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
@@ -93,7 +96,7 @@
                 <p>
                   <a
                     target="_blank"
-                    href="https://docs.google.com/document/d/1nKPwEXjlfy8W1gEQJb6_owI8BhtUWF7KDhuuxUMVSB8/edit?usp=sharing"
+                    href="https://docs.google.com/document/d/11GQF1WUCufCVC7utP1MTvk0rVpNFYtT07Qz6j-qgQyY/view?usp=sharing"
                   >
                     Syllabus</a
                   >
@@ -144,7 +147,7 @@
                 <p>
                   <a
                     target="_blank"
-                    href="https://edstem.org/us/courses/65453"
+                    href="https://edstem.org/us/courses/94577"
                     >EdStem</a
                   >
                 </p>
@@ -192,9 +195,22 @@
                 <h1>resources</h1>
 
                 <div class="department-resources">
-                  <h4>textbook</h4>
+                  <span class="alt-off">
+                    <h4>textbook</h4>
+                  </span>
+                  <span class="alt-on">
+                    <h4>Of the Book That Aids This Study</h4>
+                  </span>
                   <p>
+                  <span class="alt-off">
                     This is a closely related textbook that will supplement details to content covered in lecture. You may find the second edition, in particular, helpful for non-neural-network content. 
+                  </span>
+                  <span class="alt-on">
+                    Here stands a tome, well matched unto our path,
+                    To lend its strength where lectures leave their mark.
+                    The second print, in matters non-neural,
+                    May serve thee best, and grant a clearer light.
+                  </span>
                   </p>
                   <ul>
                     <li>
@@ -215,10 +231,21 @@
                 </div>
 
                 <div class="department-resources">
+                  <span class="alt-off">
                   <h4>CS Department Resources</h4>
+                  </span>
+                  <span class="alt-on">
+                  <h4>Of Helps Bestowed by the Department</h4>
+                  </span>
                   <p>
+                  <span class="alt-off">
                     Here are some important resources provided by the CS
                     Department.
+                  </span>
+                  <span class="alt-on">
+                  Here findest thou the aids the School provides,
+                  To smooth thy way through study’s winding road.
+                  </span>
                   </p>
                   <ul>
                     <li>
@@ -260,10 +287,22 @@
                 </div>
 
                 <div class="python">
-                  <h4>python</h4>
+                  <span class="alt-off">
+                    <h4>python</h4>
+                  </span>
+                  <span class="alt-on">
+                    <h4>Of the Snake and Its Learning</h4>
+                  </span>
                   <p>
+                  <span class="alt-off">
                     Here are some helpful resources for setting up Python on
                     your computer and learning Python.
+                  </span>
+                  <span class="alt-on">
+                    Here lie the guides to arm thy humble machine
+                    With Python’s tongue, and teach thee how to speak
+                    In code both clear and fit for learned use.
+                  </span>
                   </p>
                   <ul>
                     <li>
@@ -312,7 +351,7 @@
       <div class="container-fluid" id="footer">
         <div class="container">
           <p>
-            &copy; 2024 CS1460 Staff | Computer Science Department | Brown
+            &copy; 2026 CS1460 Staff | Computer Science Department | Brown
             University
           </p>
         </div>

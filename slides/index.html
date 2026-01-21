@@ -16,9 +16,13 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/altmode.js"></script>
+    <script type="text/javascript" src="../js/slides.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        document.getElementById("slides-nav").className += " active";
+        $("#header").load("../shared/header.html", function () {
+          $("#slides-nav").addClass("active");
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
@@ -86,10 +90,23 @@
         <div class="container" id="copy">
           <div class="row">
             <div class="col-md-12">
-              <h1>lecture slides</h1>
+              <span class="alt-off">
+                <h1>lecture slides</h1>
+              </span>
+              <span class="alt-on">
+                <h1>Of the Slides That Bear Our Lessons</h1>
+              </span>
               <p>
+              <p>
+                <span class="alt-off">
                 Below are the links to all slides covered in class. Slides will
                 be posted as soon as they are available.
+                </span>
+                <span class="alt-on">
+                  Below are writ the paths to every slide
+                  That graced our hours of discourse and debate.
+                  As soon as born, each page shall here appear.
+                </span>
               </p>
 
               <!-- The following is a template for creating a new lecture -->
@@ -100,10 +117,18 @@
               <td><a href = "" target="_blank">Click Here</a></td>
         </tr> -->
 
+            <div class="table-responsive">
               <table class="table table-hover" id="slides-table">
                 <thead>
                   <tr>
-                    <th style="white-space: nowrap">Lecture #</th>
+                    <th style="white-space: nowrap">
+                      <span class="d-none d-lg-inline">
+                        Lecture #
+                      </span>
+                      <span class="d-lg-none">
+                        #
+                      </span>
+                    </th>
                     <th>Date</th>
                     <th>Topic</th>
                     <th>Slides</th>
@@ -534,6 +559,7 @@
                 </tbody>
               </table>
             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -541,7 +567,7 @@
       <div class="container-fluid" id="footer">
         <div class="container">
           <p>
-            &copy; 2024 CS1460 Staff | Computer Science Department | Brown
+            &copy; 2026 CS1460 Staff | Computer Science Department | Brown
             University
           </p>
         </div>

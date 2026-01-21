@@ -8,18 +8,12 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha256-gL1ibrbVcRIHKlCO5OXOPC/lZz/gpdApgQAzskqqXp8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/altmode.js"></script>
   <script type="text/javascript">
-    function swap(img) {
-        var old = img.attr('src');
-        img.attr('src', img.attr('hsrc'));
-        img.attr('hsrc', old);
-    }
-
     $(document).ready(function() {
-        document.getElementById('staff-nav').className += ' active';
-        $('.profile')
-            .mouseenter(function() { swap($(this)); })
-            .mouseleave(function() { swap($(this)); });
+        $("#header").load("../shared/header.html", function() {
+          $("#staff-nav").addClass("active");
+        });
     });
   </script>
   <link rel="stylesheet" type="text/css" href="../style/bootstrap.css">
@@ -86,10 +80,21 @@
 
             <div id = "staff-description">
                 <p>
+                  <span class="alt-off">
                   	For any questions or concerns about assignments, final projects, the class, etc., please post on EdStem.
 			All regrade requests should be submitted through Gradescope.
                   	For any matter that you wish to keep personal or private, please email the professor and/or the HTA list at
 				    <a class="red" href="mailto:cs1460headtas@lists.brown.edu">cs1460headtas@lists.brown.edu</a>.
+            </span>
+                  <span class="alt-on">
+                    For doubts, disputes, or labors left unclear,
+                    Post thou on EdStem, where all may partake.
+                    For pleas of regrade, seek Gradescope alone.
+                    Yet if thy matter asks a gentler ear,
+                    Write thou the professor, or the heads
+                    Of teaching aid, at this appointed list:
+                    <a class="red" href="mailto:cs1460headtas@lists.brown.edu">cs1460headtas@lists.brown.edu</a>.
+                    </span>
                 </p>
             </div>
         </div>
@@ -98,11 +103,15 @@
             <h2>professor</h2>
             <div class="row">
               <div class="col-md-4 staff" title="">
-                  <img class="profile img-fluid"
-                  src="../res/img/ellie/ellie_front.jpeg"
-                  hsrc="../res/img/ellie/ellie_hover.png">
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/ellie/ellie_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/ellie/ellie_shakespeare.webp">
+                </div>
                 <p class="name">Ellie Pavlick</p>
                 <p class="login"></p>
+                <p class="blurb">[Blurb for Ellie]</p>
               </div>
             </div>
         </div>
@@ -110,100 +119,211 @@
           <h2>HTAs</h2>
           <div class="row">
             <div class="col-md-4 staff" title="">
-              <img class="profile img-fluid"
-               src="../res/img/aidan/aidan_front.jpg"
-              hsrc="../res/img/aidan/aidan_hover.jpg">
-              <p class="name">Aidan Harbison</p>
-              <p class="login">aharbiso</p>
+              <div class="profile-container">
+                <img class="profile profile-formal img-fluid"
+                src="../res/img/ignas/ignas_serious.webp">
+                <img class="profile profile-hover img-fluid"
+                src="../res/img/ignas/ignas_silly.webp">
+              </div>
+              <p class="name">Ignas Karvelis</p>
+              <p class="login">ikarveli</p>
+              <p class="blurb">Ignas Karvelis, of twenty-seven,<br>
+              A junior versed in science, math, and trade;<br>
+              From Lithuania, a storied land.<br>
+              He bears these words to light the shadowed way:<br>
+              “Hell is empty, and all the devils are here.”
+              </p>
             </div>
             <div class="col-md-4 staff" title="">
-                <img class="profile img-fluid"
-                src="../res/img/peter/peter_front.jpg"
-                hsrc="../res/img/peter/peter_hover.jpg">
-              <p class="name">Peter Curtin</p>
-              <p class="login">pcurtin1</p>
+              <div class="profile-container">
+                <img class="profile profile-formal img-fluid"
+                src="../res/img/marcel/marcel_serious.webp">
+                <img class="profile profile-hover img-fluid"
+                src="../res/img/marcel/marcel_silly.webp">
+              </div>
+              <p class="name">Marcel Mateos Salles</p>
+              <p class="login">mmateoss</p>
+              <p class="blurb">Good morrow all, know me as Marcel here,
+One of thy HTAs, at thy command.
+A senior trained where numbers court the mind,
+In science of the code and coin alike.
+My studies dwell where thinking machines speak,
+In language learned by models of themselves,
+In patterns taught with little guiding hand,
+And arts that force dark engines to explain.
+If thou wouldst speak of these, or aught beside,
+Approach, for talk makes sharper reason’s edge.
+From San Antonio I take my name,
+And stoutly stand for HEB and Buc-ee’s both.
+My favored words I borrow, unchanged, thus:
+“The fault, dear Brutus, is not in our stars,
+But in ourselves, that we are underlings.”
+</p>
+            </div>
+            <div class="col-md-4 staff" title="">
+              <div class="profile-container">
+                <img class="profile profile-formal img-fluid"
+                src="../res/img/yiksiu/yiksiu_serious.webp">
+                <img class="profile profile-hover img-fluid"
+                src="../res/img/yiksiu/yiksiu_silly.webp">
+              </div>
+              <p class="name">Yik Siu Chan</p>
+              <p class="login">ychan19</p>
+              <p class="blurb">I’m Yik Siu named, who studies cunning minds,<br>
+Of language, logic, LLMs intertwined.<br>
+In Hong Kong raised, New England now my home,<br>
+I follow still the Bard, in mirthful tone:<br>
+“Lord, what fools these mortals be!”
+</p>
             </div>
           </div>
       </div>
 
-      <div class="utas">
-        <h2>GTAs</h2>
-        <div class="row">
-          <div class="col-md-4 staff" title="">
-            <img class="profile img-fluid"
-             src="../res/img/catherine/catherine_front.jpg"
-            hsrc="../res/img/catherine/catherine_hover.jpg">
-            <p class="name">Catherine Chen</p>
-            <p class="login">cchen207</p>
-          </div>
-        </div>
-    </div>
-
         <div class="utas">
             <h2>UTAs</h2>
             <div class="row">
+              <div class="col-md-4 staff" title="">
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/eddie/eddie_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/eddie/eddie_silly.webp">
+                </div>
+                <p class="name">Eddie Lin</p>
+                <p class="login">hlin82</p>
+                <p class="blurb">Eddie Lin, class of ’26.5, comp. sci., earth, milky way,<br>
+                “Are you sure that we are awake?<br>
+                It seems to me that yet we sleep, we dream.”</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/haoseng/haosheng_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/haoseng/haosheng_silly.webp">
+                </div>
+                <p class="name">Haosheng Wang</p>
+                  <p class="login">hwang379</p>
+                  <p class="blurb">Haosheng Wang, master’s in CS, Yangzhou,<br>
+                  “There is nothing either good or bad, but thinking makes it so.”</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/john/john_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/john/john_silly.webp">
+                </div>
+                <p class="name">John Zou</p>
+                  <p class="login">jzou22</p>
+                  <p class="blurb">John Zou, fifth year masters, computer science, new york city, ny,<br>“Love all, trust a few, do wrong to none.”</p>
+              </div>
+              <div class="col-md-4 staff" title="">
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/keyan/keyan_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/keyan/keyan_silly.webp">
+                </div>
+                <p class="name">Keyan Rahimi</p>
+                  <p class="login">karahimi</p>
+                  <p class="blurb">My name is Keyan Rahimi, senior of the class<br>
+                  Of twenty-six, who studies mindful art<br>
+                  Of Computation joined with knowing brain.<br>
+                  From Starkville’s soil in Mississippi born,<br>
+                  I take delight in violin’s fair song,<br>
+                  In chess’s wars of thought, and crafts unseen<br>
+                  Where fancy gives new shape to idle thought.<br>
+                  This counsel most I prize above all else:<br>
+                  
+                  “Love all, trust a few,<br>
+                  Do wrong to none; be able for thine enemy<br>
+                  Rather in power than use; and keep thy friend<br>
+                  Under thy own life’s key; be check’d for silence,<br>
+                  But never tax’d for speech.”</p>
+              </div>
               <div class="col-md-4 staff" title=""> <!--put chatgpt-generated title here-->
-                  <img class="profile img-fluid"
-                   src="../res/img/adithya/adithya_front.jpg"
-                  hsrc="../res/img/adithya/adithya_hover.jpg">
-                  <p class="name">Adithya Sriram</p>
-                  <p class="login">asrira17</p>
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/matthew/matthew_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/matthew/matthew_silly.webp">
+                </div>
+                <p class="name">Matthew DaSilva</p>
+                  <p class="login">mdasilv9 </p>
+                  <p class="blurb">
+                    In Math and Code at Brown his studies dwell;<br>
+                    From Jersey’s storied shores he ventures forth,<br>
+                    And holds this line as compass through the storm:<br>
+                    “Thy sin’s not accidental, but a trade.”
+                  </p>
               </div>
               <div class="col-md-4 staff" title="">
-                  <img class="profile img-fluid"
-                   src="../res/img/etha/etha_front.jpg"
-                  hsrc="../res/img/etha/etha_hover.jpg">
-                  <p class="name">Etha Hua</p>
-                  <p class="login">thua5</p>
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/nadia/nadia_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/nadia/nadia_silly.webp">
+                </div>
+                <p class="name">Nadia Bishop</p>
+                  <p class="login">nmbishop</p>
+                  <p class="blurb">My name is Nadia, drawn to codes and streets,<br>
+A senior shaped by logic, cities, flow.<br>
+I study how our systems think and breathe,<br>
+From lines of code to grids where people grow.<br>
+I come from North Carolina’s steady ground,<br>
+Where roots run deep as futures I pursue.<br>
+*exeunt pursued by a bear*
+</p>
               </div>
               <div class="col-md-4 staff" title="">
-                  <img class="profile img-fluid"
-                   src="../res/img/evan/evan_front.jpg"
-                  hsrc="../res/img/evan/evan_hover.jpg">
-                  <p class="name">Evan Lu</p>
-                  <p class="login">elu14</p>
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/philla/phila_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/philla/phila_silly.webp">
+                </div>
+                <p class="name">Phila Dlamini</p>
+                <p class="login">pdlamini</p>
+                <p class="blurb">Phila Dlamini, Class of ’26,<br>
+A master’s scholar in the craft of CS;<br>
+From South Africa’s wide and watchful land,<br>
+Where grit and curiosity are bred.<br>
+I prize clear thinking, honest bugs laid bare,<br>
+And favor this plain truth above the rest:<br>
+“What’s past is prologue.”
+</p>
               </div>
               <div class="col-md-4 staff" title="">
-                  <img class="profile img-fluid"
-                   src="../res/img/harys/harys_front.jpg"
-                  hsrc="../res/img/harys/harys_hover.jpg">
-                  <p class="name">Harys Dalvi</p>
-                  <p class="login">hdalvi</p>
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/sean/sean_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/sean/sean_silly.webp">
+                </div>
+                <p class="name">Sean Kim</p>
+                  <p class="login">skim646</p>
+                  <p class="blurb">Sean Kim, a junior of the class of ’27,<br>
+Who trains quick models how to speak in words;<br>
+From Fort Lee’s edge of Jersey he sets out,<br>
+Where language bends beneath a coder’s hand,<br>
+And keeps this line, half earnest and half jest:<br>
+“Speak what we feel, not what we ought to say.”
+</p>
               </div>
               <div class="col-md-4 staff" title="">
-                  <img class="profile img-fluid"
-                   src="../res/img/kabir/kabir_front.jpg"
-                  hsrc="../res/img/kabir/kabir_hover.jpg">
-                  <p class="name">Kabir Subbiah</p>
-                  <p class="login">ksubbiah</p>
-              </div>
-	            <div class="col-md-4 staff" title="">
-                  <img class="profile img-fluid"
-                   src="../res/img/michael/michael_front.jpg"
-                  hsrc="../res/img/michael/michael_hover.jpg">
-                  <p class="name">Michael Ma</p>
-                  <p class="login">mma32</p>
-              </div>
-              <div class="col-md-4 staff" title="">
-                <img class="profile img-fluid"
-                 src="../res/img/nick/nick_front.jpg"
-                hsrc="../res/img/nick/nick_hover.jpg">
-                <p class="name">Nick Masi</p>
-                <p class="login">nmasi</p>
-              </div>
-              <div class="col-md-4 staff" title="">
-                <img class="profile img-fluid"
-                 src="../res/img/siming/siming_front.jpg"
-                hsrc="../res/img/siming/siming_hover.jpg">
-                <p class="name">Siming Feng</p>
-                <p class="login">sfeng22</p>
-              </div>
-              <div class="col-md-4 staff" title="">
-                <img class="profile img-fluid"
-                 src="../res/img/thomas/thomas_front.jpg"
-                hsrc="../res/img/thomas/thomas_hover.jpg">
-                <p class="name">Thomas Bui</p>
-                <p class="login">tbui12</p>
+                <div class="profile-container">
+                  <!-- TODO: uncomment these lines -->
+                  <!-- <img class="profile profile-formal img-fluid"
+                  src="../res/img/valentina/valentina_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/valentina/valentina_silly.webp"> -->
+                  <div class="profile profile-hover img-fluid"></div>
+                </div>
+                <p class="name">Valentina Lin</p>
+                <p class="login">vlin10</p>
+                <!-- <p class="blurb">[Blurb for Valentina]</p> -->
+                <p class="blurb"></p>
               </div>
             </div>
           </div>
@@ -212,18 +332,21 @@
             <h2>STAs</h2>
             <div class="row">
               <div class="col-md-4 staff" title="">
-                <img class="profile img-fluid"
-                  src="../res/img/laura/laura_front.jpg"
-                hsrc="../res/img/laura/laura_hover.jpg">
-                <p class="name">Laura Romig</p>
-                <p class="login">lromig</p>
-              </div>
-              <div class="col-md-4 staff" title="">
-                <img class="profile img-fluid"
-                  src="../res/img/nick/nick_front.jpg"
-                hsrc="../res/img/nick/nick_hover.jpg">
-                <p class="name">Nick Masi</p>
-                <p class="login">nmasi</p>
+                <div class="profile-container">
+                  <img class="profile profile-formal img-fluid"
+                  src="../res/img/nikky/nikky_serious.webp">
+                  <img class="profile profile-hover img-fluid"
+                  src="../res/img/nikky/nikky_silly.webp">
+                </div>
+                <p class="name">Nikky Lu</p>
+                <p class="login">zlu36</p>
+                <p class="blurb">
+                  Nikky Lu, master’s in CS,<br>
+                  Thinks about language and its meaning.<br>
+                  From Hangzhou to New York City.<br>
+                  In the face of the unknown:<br>
+                  “Boldness be my friend.”
+                </p>
               </div>
             </div>
           </div>
@@ -235,7 +358,7 @@
 
   <div class="container-fluid" id="footer">
     <div class="container">
-      <p>&copy; 2024 CS1460 Staff | Computer Science Department | Brown University </p>
+      <p>&copy; 2026 CS1460 Staff | Computer Science Department | Brown University </p>
     </div>
   </div>
 </div>
