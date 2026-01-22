@@ -10,21 +10,6 @@ function initAltMode() {
     }
 }
 
-function initFontDemo() {
-    if (localStorage.getItem('fontDemo') === null) {
-        localStorage.setItem('fontDemo', 'Roboto');
-    }
-
-    const font = localStorage.getItem('fontDemo');
-    document.documentElement.style.setProperty('--main-font', `${font}, sans-serif`);
-    setTimeout(() => {
-        const select = document.getElementById('fontDemoSelect');
-        if (select) {
-            select.value = font;
-        }
-    }, 500);
-}
-
 function toggleAltMode() {
     const isEnabled = localStorage.getItem('altMode') === '1';
     const newState = isEnabled ? 0 : 1;
@@ -37,11 +22,6 @@ function toggleAltMode() {
         document.documentElement.classList.remove('alt-mode');
         document.documentElement.style.setProperty('--main-font', 'var(--ori-font)');
     }
-}
-
-function toggleFontDemo(fontName) {
-    localStorage.setItem('fontDemo', fontName);
-    document.documentElement.style.setProperty('--main-font', `${fontName}, sans-serif`);
 }
 
 async function loadTable() {
@@ -126,7 +106,6 @@ async function loadTable() {
 
 
 initAltMode();
-initFontDemo();
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadTable);
 } else {

@@ -12,7 +12,7 @@
 
 :root {
   --main-font: var(--ori-font);
-  --ori-font: "Roboto", sans-serif;
+  --ori-font: "Inconsolata", monospace;
   --alt-font: "IM Fell English", serif;
 }
 
@@ -67,7 +67,7 @@ h6 {
   color: #242325;
   /* color: black; */
   font-family: var(--main-font);
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -318,7 +318,7 @@ p.quiz-desc {
   font-family: "Inconsolata", monospace;
 }
 .staff .blurb {
-  font-family: var(--main-font);
+  font-family: "IM Fell English", serif;
   font-size: 0.9rem;
   font-style: italic;
   margin-top: 8px;
@@ -695,6 +695,16 @@ img {
 /* Alt Mode Styles */
 html.alt-mode * {
   cursor: url('../res/img/Shakespeare_oval.png') 0 0, auto !important;
+}
+
+.alt-mode body,
+.alt-mode h1,
+.alt-mode h2,
+.alt-mode h3,
+.alt-mode h4,
+.alt-mode h5,
+.alt-mode h6 {
+  font-weight: 400;
 }
 
 /* 
