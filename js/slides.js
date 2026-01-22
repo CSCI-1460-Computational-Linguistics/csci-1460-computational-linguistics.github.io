@@ -39,9 +39,9 @@ const lectures = [
         'num': 0,
         'date': '22 Jan',
         'title': 'Intro Lecture, Tasks, Benchmarks',
-        'url_slides': null,
+        'url_slides': "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view?usp=share_link",
         'url_recording': null,
-        'url_quiz': null,
+        'url_quiz': "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view?usp=share_link",
         'quiz_num': 0,
     },
     {
