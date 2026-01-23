@@ -41,7 +41,7 @@ const lectures = [
         'title': 'Intro Lecture, Tasks, Benchmarks',
         'url_slides': "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view?usp=share_link",
         'url_recording': null,
-        'url_quiz': "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view?usp=share_link",
+        'url_quiz': "https://forms.gle/o9gcwsQNZpMgoaTx5",
         'quiz_num': 0,
     },
     {
