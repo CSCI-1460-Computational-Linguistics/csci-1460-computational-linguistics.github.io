@@ -40,7 +40,7 @@ const lectures = [
         'date': '22 Jan',
         'title': 'Intro Lecture, Tasks, Benchmarks',
         'url_slides': "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view?usp=share_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7af2cac-fa26-4d6c-ac95-b3d4010cf7e5",
         'url_quiz': "https://forms.gle/o9gcwsQNZpMgoaTx5",
         'quiz_num': 0,
     },
