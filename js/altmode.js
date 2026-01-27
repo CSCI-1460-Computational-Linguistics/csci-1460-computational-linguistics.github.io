@@ -49,32 +49,29 @@ async function loadTable() {
 
     const list = [
         [
-            // '2026-01-17',
-            // '2026-01-28',
-            null,
-            null,
+            '2026-01-27',
+            '2026-02-05',
             "https://drive.google.com/drive/folders/18bbpRdrymTPmR5svUE5qhy8r5B5k9URS?usp=sharing",
         ], [
-            // '2026-01-28',
-            null,
-            null,
+            '2026-02-12',
+            '2026-02-24',
             "https://drive.google.com/drive/folders/1uTOZ61QEEfpXLY57ZgofIKPbLefSPpTF?usp=sharing",
         ], [
-            null,
-            null,
-            "https://drive.google.com/drive/folders/16ndpNklLFwLriCeR14cliR8LNzL0qv7u?usp=sharing",
-        ], [
-            null,
-            null,
-            "https://drive.google.com/drive/folders/145o1oPyZvLY8Y6nO6Ch_BhBNiekqbT_Y?usp=sharing",
-        ], [
-            null,
-            null,
+            '2026-03-03',
+            '2026-03-12',
             "https://drive.google.com/drive/folders/1JvmspnhJsPDYiRIXyV_-3JkSsEUaYWjl?usp=sharing",
         ], [
-            null,
-            null,
-            "https://docs.google.com/document/d/1nv5TKtQ8DNH-7gZMCjSXax10TUz-VqNuOy-4HutSZvE/edit?usp=sharing"
+            '2026-03-17',
+            '2026-03-31',
+            "https://drive.google.com/drive/folders/145o1oPyZvLY8Y6nO6Ch_BhBNiekqbT_Y?usp=sharing",
+        ], [
+            '2026-04-02',
+            '2026-04-16',
+            "https://drive.google.com/drive/folders/16ndpNklLFwLriCeR14cliR8LNzL0qv7u?usp=sharing",
+        ], [
+            '2026-04-24',
+            '2026-05-15',
+            "https://github.com/404",
         ],
     ];
 
@@ -89,11 +86,11 @@ async function loadTable() {
         if (list[i][0] === null) { continue; }
         const out = new Date(list[i][0] + 'T00:00:00-05:00');
         const outTd = tr.querySelectorAll('td')[2];
-        outTd.textContent = `${out.getDate()} ${out.toLocaleString('en-US', { month: 'short' })}`;
+        outTd.textContent = out.toLocaleString('en-US', { month: 'long', day: 'numeric' });
         if (list[i][1] !== null) {
             const due = new Date(list[i][1] + 'T00:00:00-05:00');
             const dueTd = tr.querySelectorAll('td')[3];
-            dueTd.textContent = `${due.getDate()} ${due.toLocaleString('en-US', { month: 'short' })}`;
+            dueTd.textContent = due.toLocaleString('en-US', { month: 'long', day: 'numeric' });
         }
 
         if (t < out) { continue; }
