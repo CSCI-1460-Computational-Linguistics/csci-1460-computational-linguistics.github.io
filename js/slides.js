@@ -59,7 +59,7 @@ const lectures = [
         'title': 'BOW Text Classfiers Continued',
         'url_slides': "https://drive.google.com/file/d/182fjsp1EA0deqRR4lMAssP19N6bEu31N/view?usp=drive_link",
         'url_recording': null,
-        'url_quiz': "https://forms.gle/EpBt7swkdVSu6e8a6",
+        'url_quiz': null,
         'quiz_num': "Look at Quiz 0 and Quiz 1",
     },
     // {
@@ -318,9 +318,25 @@ function loadTable() {
         const tdRecording = createOutLinkTd('Recording', lecture.url_recording);
         tr.appendChild(tdRecording);
 
-        const quizText = lecture.quiz_num !== null ? `Quiz ${lecture.quiz_num}` : 'Quiz';
-        const tdQuiz = createOutLinkTd(quizText, lecture.url_quiz);
+        const tdQuiz = document.createElement('td');
+
+        if (lecture.url_quiz) {
+            tdQuiz.classList.add('out');
+            const a = document.createElement('a');
+            a.href = lecture.url_quiz;
+            a.target = "_blank";
+            a.textContent = `Quiz ${lecture.quiz_num}`;
+            tdQuiz.appendChild(a);
+        } else if (lecture.quiz_num) {
+            // plain text message (no link)
+            tdQuiz.textContent = lecture.quiz_num;
+        }
         tr.appendChild(tdQuiz);
+
+
+        // const quizText = lecture.quiz_num !== null ? `Quiz ${lecture.quiz_num}` : 'Quiz';
+        // const tdQuiz = createOutLinkTd(quizText, lecture.url_quiz);
+        // tr.appendChild(tdQuiz);
         tbody.appendChild(tr);
     }
 }
