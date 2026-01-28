@@ -23,6 +23,7 @@
         $("#header").load("../shared/header.html", function () {
           $("#slides-nav").addClass("active");
         });
+        $("#footer").load("../shared/footer.html");
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
@@ -147,13 +148,7 @@
         </div>
       </div>
 
-      <div class="container-fluid" id="footer">
-        <div class="container">
-          <p>
-            &copy; 2026 CS1460 Staff | Computer Science Department | Brown
-            University
-          </p>
-        </div>
+      <div id="footer"></div>
       </div>
     </div>
   </body>

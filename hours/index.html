@@ -22,6 +22,7 @@
         $("#header").load("../shared/header.html", function () {
           $("#hours-nav").addClass("active");
         });
+        $("#footer").load("../shared/footer.html");
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.css" />
@@ -119,7 +120,6 @@
                 <div class="col-md-8">
                   <iframe
                     id="calendar"
-
                     src="https://calendar.google.com/calendar/embed?src=c_9f7886db3638b26319be5cd17401a208ee57a459f694a05497e9eb5d6900eceb%40group.calendar.google.com&ctz=America%2FNew_York"
                     style="border: 0"
                     width="900"
@@ -145,14 +145,7 @@
         </div>
       </div>
 
-      <div class="container-fluid" id="footer">
-        <div class="container">
-          <p>
-            &copy; 2026 CS1460 Staff | Computer Science Department | Brown
-            University
-          </p>
-        </div>
-      </div>
+      <div id="footer"></div>
     </div>
   </body>
 </html>
