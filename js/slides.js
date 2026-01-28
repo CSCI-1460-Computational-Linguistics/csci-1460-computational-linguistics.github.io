@@ -59,7 +59,7 @@ const lectures = [
         'title': 'BOW Text Classfiers Continued',
         'url_slides': "https://drive.google.com/file/d/182fjsp1EA0deqRR4lMAssP19N6bEu31N/view?usp=drive_link",
         'url_recording': null,
-        'url_quiz': null,
+        'url_quiz': "https://forms.gle/EpBt7swkdVSu6e8a6",
         'quiz_num': "Look at Quiz 0 and Quiz 1",
     },
     // {
