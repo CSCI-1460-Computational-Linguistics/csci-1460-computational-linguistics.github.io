@@ -327,7 +327,8 @@ function loadTable() {
 
 const createOutLinkTd = (text, url) => {
     if (url === null) {
-        return document.createElement('td');
+        td.textContent = text;
+        return td;
     }
     const td = document.createElement('td');
     td.classList.add('out');
