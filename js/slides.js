@@ -306,12 +306,12 @@ function loadTable() {
         }
         tr.appendChild(tdTitle);
 
-        const useGray = lecture.url_slides === null && 
-                        lecture.url_recording === null && 
-                        lecture.url_quiz === null;
-        if (useGray) {
-            tr.classList.add('unreleased');
-        }
+        // const useGray = lecture.url_slides === null && 
+        //                 lecture.url_recording === null && 
+        //                 lecture.url_quiz === null;
+        // if (useGray) {
+        //     tr.classList.add('unreleased');
+        // }
         const tdSlides = createOutLinkTd('Slides', lecture.url_slides);
         tr.appendChild(tdSlides);
 
