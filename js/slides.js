@@ -50,7 +50,7 @@ const lectures = [
         'title': 'Text Classifiers, BOW Models',
         'url_slides': "https://drive.google.com/file/d/1AM5ipZIXwB4tTCm8WaVfqHJFPSTl4E8G/view",
         'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f12e2d48-6115-4289-95f9-b3d4010cf858",
-        'url_quiz': https://forms.gle/EpBt7swkdVSu6e8a6,
+        'url_quiz': "https://forms.gle/EpBt7swkdVSu6e8a6",
         'quiz_num': 1,
     },
     {
@@ -59,7 +59,7 @@ const lectures = [
         'title': 'BOW Text Classfiers Continued',
         'url_slides': "https://drive.google.com/file/d/182fjsp1EA0deqRR4lMAssP19N6bEu31N/view?usp=drive_link",
         'url_recording': null,
-        'url_quiz': "https://forms.gle/EpBt7swkdVSu6e8a6",
+        'url_quiz': null,
         'quiz_num': "Look at Quiz 0 and Quiz 1",
     },
     // {
