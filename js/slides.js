@@ -329,6 +329,7 @@ function loadTable() {
             tdQuiz.appendChild(a);
         } else if (lecture.quiz_num) {
             // plain text message (no link)
+            tdQuiz.classList.add('out');
             tdQuiz.textContent = lecture.quiz_num;
         }
         tr.appendChild(tdQuiz);
