@@ -58,7 +58,7 @@ const lectures = [
         'date': '29 Jan',
         'title': 'BOW Text Classfiers Continued',
         'url_slides': "https://drive.google.com/file/d/182fjsp1EA0deqRR4lMAssP19N6bEu31N/view?usp=drive_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dc45e0d0-bbb9-4922-a227-b3d4010cf875",
         'url_quiz': null,
         'quiz_num': "Look at Quiz 0 and Quiz 1",
     },
