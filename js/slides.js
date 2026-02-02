@@ -65,7 +65,7 @@ const lectures = [
     {
         'num': 3,
         'date': '3 Feb',
-        'title': 'Distributional Hypothesis & Word Vectors',
+        'title': 'Tokenization and Tagging',
         'url_slides': "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
         'url_recording': null,
         'url_quiz': "https://docs.google.com/forms/d/e/1FAIpQLSe1KYO1AHiuJyn8BxK-l0iVr73RMx32YV7j45Rc05sHKtHyhg/viewform?usp=publish-editor",
