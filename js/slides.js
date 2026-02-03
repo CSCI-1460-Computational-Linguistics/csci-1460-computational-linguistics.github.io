@@ -67,7 +67,7 @@ const lectures = [
         'date': '3 Feb',
         'title': 'Tokenization and Tagging',
         'url_slides': "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da2464f9-d535-4dfd-a0ec-b3d4010cf894",
         'url_quiz': "https://docs.google.com/forms/d/e/1FAIpQLSe1KYO1AHiuJyn8BxK-l0iVr73RMx32YV7j45Rc05sHKtHyhg/viewform?usp=publish-editor",
         'quiz_num': 2,
     },
