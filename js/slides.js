@@ -75,7 +75,7 @@ const lectures = [
         'num': 4,
         'date': '5 Feb',
         'title': 'HMMs and Tasks',
-        'url_slides': "Look at Lecture 3 slides",
+        'url_slides': "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
         'url_recording': "https://brown.zoom.us/rec/share/a9wRGdfKrx1acbyP1N8x_dX91DmL5zPxOLWVvIX1FBDEEMbTu9Um_m8Fvs34QDkJ.M2lKAEZg8mtMlo0b?startTime=1770210894000",
         'url_quiz': null,
         'quiz_num': "Look at Quiz 2",
