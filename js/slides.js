@@ -85,7 +85,7 @@ const lectures = [
         'date': '10 Feb',
         'title': 'Distributional Semantics and VSMs',
         'url_slides': "https://drive.google.com/file/d/1Y6s3bSp0jaTVqHJgIWxRXSNh7pu6pktH/view?usp=drive_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f686c0e4-e842-4aa6-971c-b3d4010cf8d6",
         'url_quiz': "https://docs.google.com/forms/d/e/1FAIpQLSfMQwBEAAD5YvuRiWZxtkw3qLQDrpDY_XJ0lIkuxuIvU8ZgZw/viewform?usp=publish-editor",
         'quiz_num': 3,
     },
