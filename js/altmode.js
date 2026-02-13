@@ -54,7 +54,7 @@ async function loadTable() {
             "https://drive.google.com/drive/folders/18bbpRdrymTPmR5svUE5qhy8r5B5k9URS?usp=sharing",
         ], [
             '2026-02-12',
-            '2026-02-24',
+            '2026-03-03',
             "https://drive.google.com/drive/folders/1uTOZ61QEEfpXLY57ZgofIKPbLefSPpTF?usp=sharing",
         ], [
             '2026-03-03',
