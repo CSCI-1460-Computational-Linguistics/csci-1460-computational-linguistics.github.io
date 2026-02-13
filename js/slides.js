@@ -94,7 +94,7 @@ const lectures = [
         'date': '12 Feb',
         'title': 'Word Embeddings',
         'url_slides': "https://drive.google.com/file/d/1J2ZQaq6mXOEzsqKjO6CLG6l9fzh7yh5X/view?usp=drive_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=963d4c0f-c40e-4f61-8dd9-b3d4010cf8f1",
         'url_quiz': "https://forms.gle/24CuMS3jtWYa9n7v8",
         'quiz_num': 4,
     },
