@@ -103,7 +103,7 @@ const lectures = [
         'date': '19 Feb',
         'title': 'Word Embeddings Continued',
         'url_slides': "https://drive.google.com/file/d/1wY2SlNYCVpHdaxdkk_bj_kFUXmRB5WHn/view?usp=sharing",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9160fe4c-8123-48c8-88ab-b3d4010cf96b",
         'url_quiz': null,
         'quiz_num': "Look at Quiz 4",
     },
