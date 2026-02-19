@@ -105,7 +105,7 @@ const lectures = [
         'url_slides': "https://drive.google.com/file/d/1wY2SlNYCVpHdaxdkk_bj_kFUXmRB5WHn/view?usp=sharing",
         'url_recording': null,
         'url_quiz': null,
-        'quiz_num': 0,
+        'quiz_num': "Look at Quiz 4",
     },
     // {
     //     'num': 7,
