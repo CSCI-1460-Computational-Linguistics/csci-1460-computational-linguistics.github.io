@@ -112,7 +112,7 @@ const lectures = [
         'date': '24 Feb',
         'title': 'Topic Modeling',
         'url_slides': "https://drive.google.com/file/d/1JcFMKcHSYs7WElsSpfK6_f-9BUIBcju2/view?usp=sharing",
-        'url_recording': null,
+        'url_recording': "https://brown.zoom.us/rec/share/cskGhPMG3_WkhmO-RMfIzL_vB-q6hPn-0UzdAcS6bNIGzLYhqqImJ3F9aExQDkYA.PAIFMK9Y3bNQQYr5",
         'url_quiz': "https://forms.gle/fGxEuyH91RRxdfwn9",
         'quiz_num': 5,
     },
