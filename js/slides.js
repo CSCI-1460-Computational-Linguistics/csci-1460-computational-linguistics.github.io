@@ -117,7 +117,7 @@ const lectures = [
         'quiz_num': 5,
     },
     {
-        'num': 8,
+        'num': 9,
         'date': '26 Feb',
         'title': 'Midterm Review',
         'url_slides': "https://drive.google.com/file/d/1pI3nmYCAop8OMEE1EU0oQGihHwfgx6GD/view?usp=sharing",
