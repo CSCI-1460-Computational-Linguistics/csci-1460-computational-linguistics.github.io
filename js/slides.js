@@ -120,7 +120,7 @@ const lectures = [
         'num': 8,
         'date': '26 Feb',
         'title': 'Midterm Review',
-        'url_slides': null,
+        'url_slides': "https://drive.google.com/file/d/1pI3nmYCAop8OMEE1EU0oQGihHwfgx6GD/view?usp=sharing",
         'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92f3f0a9-17cf-40a1-a83a-b3d4010cf99c",
         'url_quiz': null,
         'quiz_num': 0,
