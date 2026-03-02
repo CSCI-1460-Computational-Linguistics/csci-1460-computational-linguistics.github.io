@@ -125,6 +125,35 @@ const lectures = [
         'url_quiz': null,
         'quiz_num': 0,
     },
+    {
+        'num': null,
+        'date': '3 Mar',
+        'title': 'No Class',
+        // 'html_title': '<b>Midterm</b>',
+        'url_slides': null,
+        'url_recording': null,
+        'url_quiz': null,
+        'quiz_num': 0,
+    },
+    {
+        'num': null,
+        'date': '4 Mar',
+        'title': 'Review Session [3-4:30pm]',
+        // 'html_title': '<b>Midterm</b>',
+        'url_slides': null,
+        'url_recording': null,
+        'url_quiz': 'https://edstem.org/us/courses/94577/discussion/7752903',
+        'quiz_num': 'Request Topics',
+    },
+    {
+        'num': null,
+        'date': '5 Mar',
+        'html_title': '<b>Midterm</b>',
+        'url_slides': null,
+        'url_recording': null,
+        'url_quiz': null,
+        'quiz_num': 0,
+    },
     // {
     //     'num': 9,
     //     'date': '3 Mar',
@@ -311,17 +340,21 @@ function loadTable() {
 
         const tdQuiz = document.createElement('td');
 
+        const quizText = typeof lecture.quiz_num === 'number' ? 
+            `Quiz ${lecture.quiz_num}` : 
+            lecture.quiz_num;
+
         if (lecture.url_quiz) {
             tdQuiz.classList.add('out');
             const a = document.createElement('a');
             a.href = lecture.url_quiz;
             a.target = "_blank";
-            a.textContent = `Quiz ${lecture.quiz_num}`;
+            a.textContent = quizText;
             tdQuiz.appendChild(a);
         } else if (lecture.quiz_num) {
             // plain text message (no link)
             tdQuiz.classList.add('out');
-            tdQuiz.textContent = lecture.quiz_num;
+            tdQuiz.textContent = quizText;
         }
         tr.appendChild(tdQuiz);
 
