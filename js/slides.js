@@ -167,7 +167,7 @@ const lectures = [
         'date': '12 Mar',
         'title': 'MLPs and RNNs',
         'url_slides': "https://drive.google.com/file/d/1vt1Zzh5OsdU_jTqpKCs-tRFub0BjPVv6/view?usp=drive_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=89b91e41-5fc1-48e3-8288-b3d4010cfa4a",
         'url_quiz': "https://forms.gle/gKUdv8uCmUAYtbKa9",
         'quiz_num': 7,
     },
