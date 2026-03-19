@@ -176,7 +176,7 @@ const lectures = [
         'date': '17 Mar',
         'title': 'Transformers and LLMs',
         'url_slides': "https://drive.google.com/drive/u/1/folders/1Suz8SVZrTlmJoYc6H7PvSHhspVOCY61x",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=439543ee-b04d-4e97-a803-b3d4010cfa66",
         'url_quiz': "https://forms.gle/Nbxfxx8uyn892MN77",
         'quiz_num': 8,
     },
