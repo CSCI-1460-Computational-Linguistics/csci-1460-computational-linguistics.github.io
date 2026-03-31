@@ -191,8 +191,8 @@ a:visited:active {
 #final-project-table,
 #labs-table,
 #slides-table {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 td {
@@ -389,14 +389,16 @@ tt {
 #page-container {
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #other-content-container {
-  padding-bottom: 80px;
+  flex: 1;
 }
 
 #footer {
-  position: absolute;
+  flex-shrink: 0;
 
   bottom: 0;
 
