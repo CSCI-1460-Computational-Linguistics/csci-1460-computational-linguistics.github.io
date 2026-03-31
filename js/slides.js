@@ -211,10 +211,10 @@ const lectures = [
         'num': 13,
         'date': '31 Mar',
         'title': 'Pretraining',
-        'url_slides': null,
+        'url_slides': "https://drive.google.com/file/d/1NvYXmx4UaH9pLfikTbWkXV3HnprO1MM_/view?usp=share_link",
         'url_recording': null,
-        'url_quiz': null,
-        'quiz_num': 0,
+        'url_quiz': "https://forms.gle/RHxgMPqYxcagZRdHA",
+        'quiz_num': 9,
     },
     // {
     //     'num': 14,
