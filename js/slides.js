@@ -212,7 +212,7 @@ const lectures = [
         'date': '31 Mar',
         'title': 'Pretraining',
         'url_slides': "https://drive.google.com/file/d/1NvYXmx4UaH9pLfikTbWkXV3HnprO1MM_/view?usp=share_link",
-        'url_recording': null,
+        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=05ec2cc5-0dae-4f7f-a003-b3d4010cfb1b",
         'url_quiz': "https://forms.gle/RHxgMPqYxcagZRdHA",
         'quiz_num': 9,
     },
