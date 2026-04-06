@@ -220,7 +220,7 @@ const lectures = [
         'num': 14,
         'date': '2 Apr',
         'title': 'Post Training Part 1: SFT',
-        'url_slides': null,
+        'url_slides': "https://drive.google.com/file/d/1MsjPVUtkjCBVvOtrRbeiAy75DEyNkT45/view?usp=sharing",
         'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24d2c843-e14d-4338-b158-b3d4010cfb39",
         'url_quiz': "https://forms.gle/yKQBWdgwgp8Ydxss7",
         'quiz_num': 10,
