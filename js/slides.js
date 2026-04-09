@@ -8,9 +8,9 @@
  * - url_recording: URL string for recording (null if no link)
  * - url_quiz: URL string for quiz (null if no link)
  * - quiz_num: quiz number
- * 
+ *
  * If none of the URLs are provided (all null), the row is grayed out.
- * 
+ *
  * Examples:
  * ```javascript
  * {
@@ -35,334 +35,370 @@
  * ```
  */
 const lectures = [
-    {
-        'num': 0,
-        'date': '22 Jan',
-        'title': 'Intro Lecture, Tasks, Benchmarks',
-        'url_slides': "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7af2cac-fa26-4d6c-ac95-b3d4010cf7e5",
-        'url_quiz': "https://forms.gle/o9gcwsQNZpMgoaTx5",
-        'quiz_num': 0,
-    },
-    {
-        'num': 1,
-        'date': '27 Jan',
-        'title': 'Text Classifiers, BOW Models',
-        'url_slides': "https://drive.google.com/file/d/1AM5ipZIXwB4tTCm8WaVfqHJFPSTl4E8G/view",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f12e2d48-6115-4289-95f9-b3d4010cf858",
-        'url_quiz': "https://forms.gle/EpBt7swkdVSu6e8a6",
-        'quiz_num': 1,
-    },
-    {
-        'num': 2,
-        'date': '29 Jan',
-        'title': 'BOW Text Classfiers Continued',
-        'url_slides': "https://drive.google.com/file/d/182fjsp1EA0deqRR4lMAssP19N6bEu31N/view?usp=drive_link",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dc45e0d0-bbb9-4922-a227-b3d4010cf875",
-        'url_quiz': null,
-        'quiz_num': "Look at Quiz 0 and Quiz 1",
-    },
-    {
-        'num': 3,
-        'date': '3 Feb',
-        'title': 'Tokenization and Tagging',
-        'url_slides': "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da2464f9-d535-4dfd-a0ec-b3d4010cf894",
-        'url_quiz': "https://docs.google.com/forms/d/e/1FAIpQLSe1KYO1AHiuJyn8BxK-l0iVr73RMx32YV7j45Rc05sHKtHyhg/viewform?usp=publish-editor",
-        'quiz_num': 2,
-    },
-    {
-        'num': 4,
-        'date': '5 Feb',
-        'title': 'HMMs and Tasks',
-        'url_slides': "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
-        'url_recording': "https://brown.zoom.us/rec/share/a9wRGdfKrx1acbyP1N8x_dX91DmL5zPxOLWVvIX1FBDEEMbTu9Um_m8Fvs34QDkJ.M2lKAEZg8mtMlo0b?startTime=1770210894000",
-        'url_quiz': null,
-        'quiz_num': "Look at Quiz 2",
-    },
-    {
-        'num': 5,
-        'date': '10 Feb',
-        'title': 'Distributional Semantics and VSMs',
-        'url_slides': "https://drive.google.com/file/d/1Y6s3bSp0jaTVqHJgIWxRXSNh7pu6pktH/view?usp=drive_link",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f686c0e4-e842-4aa6-971c-b3d4010cf8d6",
-        'url_quiz': "https://docs.google.com/forms/d/e/1FAIpQLSfMQwBEAAD5YvuRiWZxtkw3qLQDrpDY_XJ0lIkuxuIvU8ZgZw/viewform?usp=publish-editor",
-        'quiz_num': 3,
-    },
-    {
-        'num': 6,
-        'date': '12 Feb',
-        'title': 'Word Embeddings',
-        'url_slides': "https://drive.google.com/file/d/1J2ZQaq6mXOEzsqKjO6CLG6l9fzh7yh5X/view?usp=drive_link",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=963d4c0f-c40e-4f61-8dd9-b3d4010cf8f1",
-        'url_quiz': "https://forms.gle/24CuMS3jtWYa9n7v8",
-        'quiz_num': 4,
-    },
-    {
-        'num': 7,
-        'date': '19 Feb',
-        'title': 'Word Embeddings Continued',
-        'url_slides': "https://drive.google.com/file/d/1wY2SlNYCVpHdaxdkk_bj_kFUXmRB5WHn/view?usp=sharing",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9160fe4c-8123-48c8-88ab-b3d4010cf96b",
-        'url_quiz': null,
-        'quiz_num': "Look at Quiz 4",
-    },
-    {
-        'num': 8,
-        'date': '24 Feb',
-        'title': 'Topic Modeling',
-        'url_slides': "https://drive.google.com/file/d/1JcFMKcHSYs7WElsSpfK6_f-9BUIBcju2/view?usp=sharing",
-        'url_recording': "https://brown.zoom.us/rec/share/cskGhPMG3_WkhmO-RMfIzL_vB-q6hPn-0UzdAcS6bNIGzLYhqqImJ3F9aExQDkYA.PAIFMK9Y3bNQQYr5",
-        'url_quiz': "https://forms.gle/fGxEuyH91RRxdfwn9",
-        'quiz_num': 5,
-    },
-    {
-        'num': 9,
-        'date': '26 Feb',
-        'title': 'Midterm Review',
-        'url_slides': "https://drive.google.com/file/d/1pI3nmYCAop8OMEE1EU0oQGihHwfgx6GD/view?usp=sharing",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92f3f0a9-17cf-40a1-a83a-b3d4010cf99c",
-        'url_quiz': null,
-        'quiz_num': 0,
-    },
-    {
-        'num': null,
-        'date': '3 Mar',
-        'title': 'No Class',
-        // 'html_title': '<b>Midterm</b>',
-        'url_slides': null,
-        'url_recording': null,
-        'url_quiz': null,
-        'quiz_num': 0,
-    },
-    {
-        'num': null,
-        'date': '4 Mar',
-        'title': 'Review Session [3-4:30pm]',
-        'url_slides': null,
-        'url_recording': 'https://brown.zoom.us/rec/share/p5JNSsXj14I4lT07r_RDSwKKVe7dhW3TdTik_2l-r6DcT3DR-FNff6rNyamy8tox.3EgY_Z-1QFj-_Bm1',
-        'url_quiz': 'https://edstem.org/us/courses/94577/discussion/7752903',
-        'quiz_num': 'Request Topics',
-    },
-    {
-        'num': null,
-        'date': '5 Mar',
-        'html_title': '<b>Midterm</b>',
-        'url_slides': null,
-        'url_recording': null,
-        'url_quiz': null,
-        'quiz_num': 0,
-    },
-    {
-        'num': 10,
-        'date': '10 Mar',
-        'title': 'Language Modeling Basics',
-        'url_slides': 'https://drive.google.com/file/d/1EsB1hbXyX2bEXDbktkJZ0I_BDvJ1xwyr/view?usp=sharing',
-        'url_recording': 'https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a8da35c2-ebaf-40b7-a046-b3d4010cfa2c',
-        'url_quiz': 'https://forms.gle/uoNQAYQYk5CXCWxM6',
-        'quiz_num': 6,
-    },
-    {
-        'num': 11,
-        'date': '12 Mar',
-        'title': 'MLPs and RNNs',
-        'url_slides': "https://drive.google.com/file/d/1vt1Zzh5OsdU_jTqpKCs-tRFub0BjPVv6/view?usp=drive_link",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=89b91e41-5fc1-48e3-8288-b3d4010cfa4a",
-        'url_quiz': "https://forms.gle/gKUdv8uCmUAYtbKa9",
-        'quiz_num': 7,
-    },
-    {
-        'num': 12,
-        'date': '17 Mar',
-        'title': 'Transformers and LLMs',
-        'url_slides': "https://drive.google.com/file/d/1GBgI6Yb0n8MqzjwcB_Mr0LhAJBdrC7hA/view?usp=sharing",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=439543ee-b04d-4e97-a803-b3d4010cfa66",
-        'url_quiz': "https://forms.gle/Nbxfxx8uyn892MN77",
-        'quiz_num': 8,
-    },
-    {
-        'num': null,
-        'date': '19 Mar',
-        'title': 'No Class',
-        'url_slides': null,
-        'url_recording': null,
-        'url_quiz': null,
-        'quiz_num': 0,
-    },
-    {
-        'num': null,
-        'date': '24 Mar',
-        'title': 'No Class',
-        'url_slides': null,
-        'url_recording': null,
-        'url_quiz': null,
-        'quiz_num': 0,
-    },
-    {
-        'num': null,
-        'date': '26 Mar',
-        'title': 'No Class',
-        'url_slides': null,
-        'url_recording': null,
-        'url_quiz': null,
-        'quiz_num': 0,
-    },
-    {
-        'num': 13,
-        'date': '31 Mar',
-        'title': 'Pretraining',
-        'url_slides': "https://drive.google.com/file/d/1NvYXmx4UaH9pLfikTbWkXV3HnprO1MM_/view?usp=share_link",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=05ec2cc5-0dae-4f7f-a003-b3d4010cfb1b",
-        'url_quiz': "https://forms.gle/RHxgMPqYxcagZRdHA",
-        'quiz_num': 9,
-    },
-    {
-        'num': 14,
-        'date': '2 Apr',
-        'title': 'Post Training Part 1: SFT',
-        'url_slides': "https://drive.google.com/file/d/1MsjPVUtkjCBVvOtrRbeiAy75DEyNkT45/view?usp=sharing",
-        'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24d2c843-e14d-4338-b158-b3d4010cfb39",
-        'url_quiz': "https://forms.gle/yKQBWdgwgp8Ydxss7",
-        'quiz_num': 10,
-    },
-    {
-        'num': 15,
-        'date': '7 Apr',
-        'title': 'Post Training Part 2: RLHF and "Alignment"',
-        'url_slides': 'https://drive.google.com/file/d/1Grux9mm4h0welShFu2Zo7vUu7elK5ocC/view?usp=sharing',
-        'url_recording':'https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1fdf282b-d0da-4410-9e87-b3d4010cfb51',
-        'url_quiz': 'https://forms.gle/eRpMMKZhJ2bMFC6UA',
-        'quiz_num': 11,
-    },
-    // {
-    //     'num': 16,
-    //     'date': '9 Apr',
-    //     'title': 'Prompts and In Context Learning',
-    //     'url_slides': null,
-    //     'url_recording': null,
-    //     'url_quiz': null,
-    //     'quiz_num': 0,
-    // },
-    // {
-    //     'num': 17,
-    //     'date': '14 Apr',
-    //     'title': 'LLM evaluations and the race for “AGI”',
-    //     'url_slides': null,
-    //     'url_recording': null,
-    //     'url_quiz': null,
-    //     'quiz_num': 0,
-    // },
-    // {
-    //     'num': 18,
-    //     'date': '16 Apr',
-    //     'title': 'Interpretability and the Science of LLMs',
-    //     'url_slides': null,
-    //     'url_recording': null,
-    //     'url_quiz': null,
-    //     'quiz_num': 0,
-    // },
-    // {
-    //     'num': null,
-    //     'date': '21 Apr',
-    //     'title': 'Review Day',
-    //     'url_slides': null,
-    //     'url_recording': null,
-    //     'url_quiz': null,
-    //     'quiz_num': 0,
-    // }
+  {
+    num: 0,
+    date: "22 Jan",
+    title: "Intro Lecture, Tasks, Benchmarks",
+    url_slides:
+      "https://drive.google.com/file/d/12stm9S9m8IQKonCJnfqdqX8t4SA5dlrJ/view",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7af2cac-fa26-4d6c-ac95-b3d4010cf7e5",
+    url_quiz: "https://forms.gle/o9gcwsQNZpMgoaTx5",
+    quiz_num: 0,
+  },
+  {
+    num: 1,
+    date: "27 Jan",
+    title: "Text Classifiers, BOW Models",
+    url_slides:
+      "https://drive.google.com/file/d/1AM5ipZIXwB4tTCm8WaVfqHJFPSTl4E8G/view",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f12e2d48-6115-4289-95f9-b3d4010cf858",
+    url_quiz: "https://forms.gle/EpBt7swkdVSu6e8a6",
+    quiz_num: 1,
+  },
+  {
+    num: 2,
+    date: "29 Jan",
+    title: "BOW Text Classfiers Continued",
+    url_slides:
+      "https://drive.google.com/file/d/182fjsp1EA0deqRR4lMAssP19N6bEu31N/view?usp=drive_link",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dc45e0d0-bbb9-4922-a227-b3d4010cf875",
+    url_quiz: null,
+    quiz_num: "Look at Quiz 0 and Quiz 1",
+  },
+  {
+    num: 3,
+    date: "3 Feb",
+    title: "Tokenization and Tagging",
+    url_slides:
+      "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da2464f9-d535-4dfd-a0ec-b3d4010cf894",
+    url_quiz:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe1KYO1AHiuJyn8BxK-l0iVr73RMx32YV7j45Rc05sHKtHyhg/viewform?usp=publish-editor",
+    quiz_num: 2,
+  },
+  {
+    num: 4,
+    date: "5 Feb",
+    title: "HMMs and Tasks",
+    url_slides:
+      "https://drive.google.com/file/d/1Hf-EIKM7ZZjstWO5EAy1hZZNui1zUaP7/view?usp=drive_link",
+    url_recording:
+      "https://brown.zoom.us/rec/share/a9wRGdfKrx1acbyP1N8x_dX91DmL5zPxOLWVvIX1FBDEEMbTu9Um_m8Fvs34QDkJ.M2lKAEZg8mtMlo0b?startTime=1770210894000",
+    url_quiz: null,
+    quiz_num: "Look at Quiz 2",
+  },
+  {
+    num: 5,
+    date: "10 Feb",
+    title: "Distributional Semantics and VSMs",
+    url_slides:
+      "https://drive.google.com/file/d/1Y6s3bSp0jaTVqHJgIWxRXSNh7pu6pktH/view?usp=drive_link",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f686c0e4-e842-4aa6-971c-b3d4010cf8d6",
+    url_quiz:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfMQwBEAAD5YvuRiWZxtkw3qLQDrpDY_XJ0lIkuxuIvU8ZgZw/viewform?usp=publish-editor",
+    quiz_num: 3,
+  },
+  {
+    num: 6,
+    date: "12 Feb",
+    title: "Word Embeddings",
+    url_slides:
+      "https://drive.google.com/file/d/1J2ZQaq6mXOEzsqKjO6CLG6l9fzh7yh5X/view?usp=drive_link",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=963d4c0f-c40e-4f61-8dd9-b3d4010cf8f1",
+    url_quiz: "https://forms.gle/24CuMS3jtWYa9n7v8",
+    quiz_num: 4,
+  },
+  {
+    num: 7,
+    date: "19 Feb",
+    title: "Word Embeddings Continued",
+    url_slides:
+      "https://drive.google.com/file/d/1wY2SlNYCVpHdaxdkk_bj_kFUXmRB5WHn/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9160fe4c-8123-48c8-88ab-b3d4010cf96b",
+    url_quiz: null,
+    quiz_num: "Look at Quiz 4",
+  },
+  {
+    num: 8,
+    date: "24 Feb",
+    title: "Topic Modeling",
+    url_slides:
+      "https://drive.google.com/file/d/1JcFMKcHSYs7WElsSpfK6_f-9BUIBcju2/view?usp=sharing",
+    url_recording:
+      "https://brown.zoom.us/rec/share/cskGhPMG3_WkhmO-RMfIzL_vB-q6hPn-0UzdAcS6bNIGzLYhqqImJ3F9aExQDkYA.PAIFMK9Y3bNQQYr5",
+    url_quiz: "https://forms.gle/fGxEuyH91RRxdfwn9",
+    quiz_num: 5,
+  },
+  {
+    num: 9,
+    date: "26 Feb",
+    title: "Midterm Review",
+    url_slides:
+      "https://drive.google.com/file/d/1pI3nmYCAop8OMEE1EU0oQGihHwfgx6GD/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92f3f0a9-17cf-40a1-a83a-b3d4010cf99c",
+    url_quiz: null,
+    quiz_num: 0,
+  },
+  {
+    num: null,
+    date: "3 Mar",
+    title: "No Class",
+    // 'html_title': '<b>Midterm</b>',
+    url_slides: null,
+    url_recording: null,
+    url_quiz: null,
+    quiz_num: 0,
+  },
+  {
+    num: null,
+    date: "4 Mar",
+    title: "Review Session [3-4:30pm]",
+    url_slides: null,
+    url_recording:
+      "https://brown.zoom.us/rec/share/p5JNSsXj14I4lT07r_RDSwKKVe7dhW3TdTik_2l-r6DcT3DR-FNff6rNyamy8tox.3EgY_Z-1QFj-_Bm1",
+    url_quiz: "https://edstem.org/us/courses/94577/discussion/7752903",
+    quiz_num: "Request Topics",
+  },
+  {
+    num: null,
+    date: "5 Mar",
+    html_title: "<b>Midterm</b>",
+    url_slides: null,
+    url_recording: null,
+    url_quiz: null,
+    quiz_num: 0,
+  },
+  {
+    num: 10,
+    date: "10 Mar",
+    title: "Language Modeling Basics",
+    url_slides:
+      "https://drive.google.com/file/d/1EsB1hbXyX2bEXDbktkJZ0I_BDvJ1xwyr/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a8da35c2-ebaf-40b7-a046-b3d4010cfa2c",
+    url_quiz: "https://forms.gle/uoNQAYQYk5CXCWxM6",
+    quiz_num: 6,
+  },
+  {
+    num: 11,
+    date: "12 Mar",
+    title: "MLPs and RNNs",
+    url_slides:
+      "https://drive.google.com/file/d/1vt1Zzh5OsdU_jTqpKCs-tRFub0BjPVv6/view?usp=drive_link",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=89b91e41-5fc1-48e3-8288-b3d4010cfa4a",
+    url_quiz: "https://forms.gle/gKUdv8uCmUAYtbKa9",
+    quiz_num: 7,
+  },
+  {
+    num: 12,
+    date: "17 Mar",
+    title: "Transformers and LLMs",
+    url_slides:
+      "https://drive.google.com/file/d/1GBgI6Yb0n8MqzjwcB_Mr0LhAJBdrC7hA/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=439543ee-b04d-4e97-a803-b3d4010cfa66",
+    url_quiz: "https://forms.gle/Nbxfxx8uyn892MN77",
+    quiz_num: 8,
+  },
+  {
+    num: null,
+    date: "19 Mar",
+    title: "No Class",
+    url_slides: null,
+    url_recording: null,
+    url_quiz: null,
+    quiz_num: 0,
+  },
+  {
+    num: null,
+    date: "24 Mar",
+    title: "No Class",
+    url_slides: null,
+    url_recording: null,
+    url_quiz: null,
+    quiz_num: 0,
+  },
+  {
+    num: null,
+    date: "26 Mar",
+    title: "No Class",
+    url_slides: null,
+    url_recording: null,
+    url_quiz: null,
+    quiz_num: 0,
+  },
+  {
+    num: 13,
+    date: "31 Mar",
+    title: "Pretraining",
+    url_slides:
+      "https://drive.google.com/file/d/1NvYXmx4UaH9pLfikTbWkXV3HnprO1MM_/view?usp=share_link",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=05ec2cc5-0dae-4f7f-a003-b3d4010cfb1b",
+    url_quiz: "https://forms.gle/RHxgMPqYxcagZRdHA",
+    quiz_num: 9,
+  },
+  {
+    num: 14,
+    date: "2 Apr",
+    title: "Post Training Part 1: SFT",
+    url_slides:
+      "https://drive.google.com/file/d/1MsjPVUtkjCBVvOtrRbeiAy75DEyNkT45/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24d2c843-e14d-4338-b158-b3d4010cfb39",
+    url_quiz: "https://forms.gle/yKQBWdgwgp8Ydxss7",
+    quiz_num: 10,
+  },
+  {
+    num: 15,
+    date: "7 Apr",
+    title: 'Post Training Part 2: RLHF and "Alignment"',
+    url_slides:
+      "https://drive.google.com/file/d/1Grux9mm4h0welShFu2Zo7vUu7elK5ocC/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1fdf282b-d0da-4410-9e87-b3d4010cfb51",
+    url_quiz: "https://forms.gle/eRpMMKZhJ2bMFC6UA",
+    quiz_num: 11,
+  },
+  {
+    num: 16,
+    date: "9 Apr",
+    title: "Prompting and In-Context Learning",
+    url_slides:
+      "https://drive.google.com/file/d/100lF_ZPDjcTw22IQ_NjwtoyIEMSg7pIZ/view?usp=sharing",
+    url_recording:
+      "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=27f253f1-5e12-4e5e-b1a7-b3d4010cfb70",
+    url_quiz: "https://forms.gle/MHjWKGgsWXNdaojq8",
+    quiz_num: 12,
+  },
+  // {
+  //     'num': 17,
+  //     'date': '14 Apr',
+  //     'title': 'LLM evaluations and the race for “AGI”',
+  //     'url_slides': null,
+  //     'url_recording': null,
+  //     'url_quiz': null,
+  //     'quiz_num': 0,
+  // },
+  // {
+  //     'num': 18,
+  //     'date': '16 Apr',
+  //     'title': 'Interpretability and the Science of LLMs',
+  //     'url_slides': null,
+  //     'url_recording': null,
+  //     'url_quiz': null,
+  //     'quiz_num': 0,
+  // },
+  // {
+  //     'num': null,
+  //     'date': '21 Apr',
+  //     'title': 'Review Day',
+  //     'url_slides': null,
+  //     'url_recording': null,
+  //     'url_quiz': null,
+  //     'quiz_num': 0,
+  // }
 ];
 
 function loadTable() {
-    const table = document.getElementById('slides-table');
-    const tbody = table?.querySelector('tbody');
-    if (!table || !tbody) {
-        console.warn('Could not find table with id slides-table');
-        return;
+  const table = document.getElementById("slides-table");
+  const tbody = table?.querySelector("tbody");
+  if (!table || !tbody) {
+    console.warn("Could not find table with id slides-table");
+    return;
+  }
+  // remove existing rows
+  tbody.innerHTML = "";
+
+  for (let i = 0; i < lectures.length; i++) {
+    const lecture = lectures[i];
+    const tr = document.createElement("tr");
+
+    // Number
+    const tdNum = document.createElement("td");
+    tdNum.textContent = lecture.num !== null ? lecture.num : "";
+    tr.appendChild(tdNum);
+
+    // Date
+    const tdDate = document.createElement("td");
+    tdDate.textContent = lecture.date;
+    tr.appendChild(tdDate);
+
+    // Title
+    const tdTitle = document.createElement("td");
+    if (lecture.html_title) {
+      tdTitle.classList.add("out");
+      tdTitle.innerHTML = lecture.html_title;
+    } else {
+      tdTitle.textContent = lecture.title;
     }
-    // remove existing rows
-    tbody.innerHTML = '';
+    tr.appendChild(tdTitle);
 
-    for (let i = 0; i < lectures.length; i++) {
-        const lecture = lectures[i];
-        const tr = document.createElement('tr');
+    // const useGray = lecture.url_slides === null &&
+    //                 lecture.url_recording === null &&
+    //                 lecture.url_quiz === null;
+    // if (useGray) {
+    //     tr.classList.add('unreleased');
+    // }
+    const tdSlides = createOutLinkTd("Slides", lecture.url_slides);
+    tr.appendChild(tdSlides);
 
-        // Number
-        const tdNum = document.createElement('td');
-        tdNum.textContent = lecture.num !== null ? lecture.num : '';
-        tr.appendChild(tdNum);
+    const tdRecording = createOutLinkTd("Recording", lecture.url_recording);
+    tr.appendChild(tdRecording);
 
-        // Date
-        const tdDate = document.createElement('td');
-        tdDate.textContent = lecture.date;
-        tr.appendChild(tdDate);
+    const tdQuiz = document.createElement("td");
 
-        // Title
-        const tdTitle = document.createElement('td');
-        if (lecture.html_title) {
-            tdTitle.classList.add('out');
-            tdTitle.innerHTML = lecture.html_title;
-        } else {
-            tdTitle.textContent = lecture.title;
-        }
-        tr.appendChild(tdTitle);
+    const quizText =
+      typeof lecture.quiz_num === "number"
+        ? `Quiz ${lecture.quiz_num}`
+        : lecture.quiz_num;
 
-        // const useGray = lecture.url_slides === null && 
-        //                 lecture.url_recording === null && 
-        //                 lecture.url_quiz === null;
-        // if (useGray) {
-        //     tr.classList.add('unreleased');
-        // }
-        const tdSlides = createOutLinkTd('Slides', lecture.url_slides);
-        tr.appendChild(tdSlides);
-
-        const tdRecording = createOutLinkTd('Recording', lecture.url_recording);
-        tr.appendChild(tdRecording);
-
-        const tdQuiz = document.createElement('td');
-
-        const quizText = typeof lecture.quiz_num === 'number' ? 
-            `Quiz ${lecture.quiz_num}` : 
-            lecture.quiz_num;
-
-        if (lecture.url_quiz) {
-            tdQuiz.classList.add('out');
-            const a = document.createElement('a');
-            a.href = lecture.url_quiz;
-            a.target = "_blank";
-            a.textContent = quizText;
-            tdQuiz.appendChild(a);
-        } else if (lecture.quiz_num) {
-            // plain text message (no link)
-            tdQuiz.classList.add('out');
-            tdQuiz.textContent = quizText;
-        }
-        tr.appendChild(tdQuiz);
-
-
-        // const quizText = lecture.quiz_num !== null ? `Quiz ${lecture.quiz_num}` : 'Quiz';
-        // const tdQuiz = createOutLinkTd(quizText, lecture.url_quiz);
-        // tr.appendChild(tdQuiz);
-        tbody.appendChild(tr);
+    if (lecture.url_quiz) {
+      tdQuiz.classList.add("out");
+      const a = document.createElement("a");
+      a.href = lecture.url_quiz;
+      a.target = "_blank";
+      a.textContent = quizText;
+      tdQuiz.appendChild(a);
+    } else if (lecture.quiz_num) {
+      // plain text message (no link)
+      tdQuiz.classList.add("out");
+      tdQuiz.textContent = quizText;
     }
+    tr.appendChild(tdQuiz);
+
+    // const quizText = lecture.quiz_num !== null ? `Quiz ${lecture.quiz_num}` : 'Quiz';
+    // const tdQuiz = createOutLinkTd(quizText, lecture.url_quiz);
+    // tr.appendChild(tdQuiz);
+    tbody.appendChild(tr);
+  }
 }
 
 const createOutLinkTd = (text, url) => {
-    if (url === null) {
-        return document.createElement('td');
-    }
-    const td = document.createElement('td');
-    td.classList.add('out');
-    const a = document.createElement('a');
-    a.href = url;
-    a.target = "_blank";
-    a.textContent = text;
-    td.appendChild(a);
-    return td;
-}
+  if (url === null) {
+    return document.createElement("td");
+  }
+  const td = document.createElement("td");
+  td.classList.add("out");
+  const a = document.createElement("a");
+  a.href = url;
+  a.target = "_blank";
+  a.textContent = text;
+  td.appendChild(a);
+  return td;
+};
 
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadTable);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadTable);
 } else {
-    loadTable();
+  loadTable();
 }
