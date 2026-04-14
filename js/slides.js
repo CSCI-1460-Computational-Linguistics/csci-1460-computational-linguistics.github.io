@@ -280,33 +280,40 @@ const lectures = [
     url_quiz: "https://forms.gle/MHjWKGgsWXNdaojq8",
     quiz_num: 12,
   },
-  // {
-  //     'num': 17,
-  //     'date': '14 Apr',
-  //     'title': 'LLM evaluations and the race for “AGI”',
-  //     'url_slides': null,
-  //     'url_recording': null,
-  //     'url_quiz': null,
-  //     'quiz_num': 0,
-  // },
-  // {
-  //     'num': 18,
-  //     'date': '16 Apr',
-  //     'title': 'Interpretability and the Science of LLMs',
-  //     'url_slides': null,
-  //     'url_recording': null,
-  //     'url_quiz': null,
-  //     'quiz_num': 0,
-  // },
-  // {
-  //     'num': null,
-  //     'date': '21 Apr',
-  //     'title': 'Review Day',
-  //     'url_slides': null,
-  //     'url_recording': null,
-  //     'url_quiz': null,
-  //     'quiz_num': 0,
-  // }
+  {
+      'num': 17,
+      'date': '14 Apr',
+      'title': 'Reasoning Models',
+      'url_slides': "https://drive.google.com/file/d/1ZJXqR1T0P8V1tNxHIN2z6oU0WHMHjpjQ/view?usp=sharing",
+      'url_recording': null,
+      'url_quiz': null,
+      'quiz_num': 0,
+  },
+  {
+      'num': null,
+      'date': '16 Apr',
+      'title': "No Class [Linguistics Panel]",
+      'url_slides': null,
+      'url_recording': null,
+      'url_quiz': null,
+      'quiz_num': 0,
+  },
+  {
+      'num': null,
+      'date': '21 Apr',
+      'title': 'Review Day',
+      'url_slides': null,
+      'url_recording': null,
+      'url_quiz': null,
+      'quiz_num': 0,
+  },
+  {
+      'num': null,
+      'date': '23 Apr',
+      'html_title': "<b>Final Exam</b>",
+      'url_slides': null,
+      'url_recording': null,
+  }
 ];
 
 function loadTable() {
