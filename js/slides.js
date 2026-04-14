@@ -285,7 +285,7 @@ const lectures = [
       'date': '14 Apr',
       'title': 'Reasoning Models',
       'url_slides': "https://drive.google.com/file/d/1ZJXqR1T0P8V1tNxHIN2z6oU0WHMHjpjQ/view?usp=sharing",
-      'url_recording': null,
+      'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0b9838e8-d22d-4a1c-b2d1-b3d4010cfb99",
       'url_quiz': null,
       'quiz_num': 0,
   },
