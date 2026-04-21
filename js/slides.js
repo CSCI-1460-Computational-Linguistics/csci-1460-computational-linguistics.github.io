@@ -303,7 +303,7 @@ const lectures = [
       'date': '21 Apr',
       'title': 'Review Day',
       'url_slides': null,
-      'url_recording': null,
+      'url_recording': "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=922cf3a5-9f32-4a4b-a0ac-b3d4010cfbd8",
       'url_quiz': null,
       'quiz_num': 0,
   },
